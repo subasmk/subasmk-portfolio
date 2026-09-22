@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -54,14 +55,6 @@
   </script>
 
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="icon" href="Assets/images/title_icon.png">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=Space+Grotesk:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
-
   <script>
     tailwind.config = {
       theme: {
@@ -91,118 +84,14 @@
       }
     }
   </script>
-
-  <style>
-    /* Fixed: Cursor none only on desktop for accessibility */
-    @media (min-width: 1024px) {
-      body {
-        cursor: none;
-      }
-    }
-
-    body {
-      background-color: #FFFDF5;
-      background-image: radial-gradient(#000 1px, transparent 1px),
-        linear-gradient(to right, #e5e5e5 1px, transparent 1px),
-        linear-gradient(to bottom, #e5e5e5 1px, transparent 1px);
-      background-size: 40px 40px, 100px 100px, 100px 100px;
-    }
-
-    #cursor {
-      pointer-events: none;
-      position: fixed;
-      z-index: 9999;
-      mix-blend-mode: difference;
-      transition: width 0.2s, height 0.2s, background-color 0.2s, transform 0.1s;
-    }
-
-    @media (max-width: 1023px) {
-      #cursor {
-        display: none;
-      }
-    }
-
-    .marquee-container {
-      overflow: hidden;
-    }
-
-    .marquee-content {
-      display: flex;
-      animation: scroll 40s linear infinite;
-      width: max-content;
-    }
-
-    .marquee-container:hover .marquee-content {
-      animation-play-state: paused;
-    }
-
-    @keyframes scroll {
-      0% {
-        transform: translateX(0);
-      }
-      100% {
-        transform: translateX(-50%);
-      }
-    }
-
-    @keyframes infinite-marquee {
-      0% {
-        transform: translateX(0);
-      }
-      100% {
-        transform: translateX(-50%);
-      }
-    }
-
-    .animate-marquee {
-      display: flex;
-      width: max-content;
-      animation: infinite-marquee 15s linear infinite;
-    }
-
-    .animate-marquee:hover {
-      animation-play-state: paused;
-    }
-
-    .marquee-container::-webkit-scrollbar {
-      display: none;
-    }
-
-    .marquee-container {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
-
-    .reveal {
-      opacity: 0;
-      transform: translateY(40px);
-      transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
-    }
-
-    .reveal.active {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .glitch-hover:hover {
-      animation: glitch-anim 0.3s cubic-bezier(.25, .46, .45, .94) both infinite;
-      color: #FF2A2A;
-    }
-
-    @keyframes glitch-anim {
-      0% { transform: translate(0) }
-      20% { transform: translate(-2px, 2px) }
-      40% { transform: translate(-2px, -2px) }
-      60% { transform: translate(2px, 2px) }
-      80% { transform: translate(2px, -2px) }
-      100% { transform: translate(0) }
-    }
-
-    /* Smooth scroll behavior */
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="icon" href="Assets/images/title_icon.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=Space+Grotesk:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="text-neo-black font-display antialiased selection:bg-neo-black selection:text-neo-yellow">
@@ -213,7 +102,8 @@
   </div>
 
   <!-- Improved Navbar with blur effect -->
-  <nav class="fixed top-0 w-full z-50 px-4 py-4 backdrop-blur-md bg-white/70 border-b border-black/10 pointer-events-none">
+  <nav
+    class="fixed top-0 w-full z-50 px-4 py-4 backdrop-blur-md bg-white/70 border-b border-black/10 pointer-events-none">
     <div class="max-w-7xl mx-auto flex justify-between items-center pointer-events-auto">
       <a href="#"
         class="bg-neo-white border-2 border-black px-4 py-1 text-2xl font-black shadow-hard hover:bg-neo-yellow transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-none cursor-hover">
@@ -239,9 +129,11 @@
   <!-- Hero Section -->
   <section
     class="min-h-screen flex flex-col justify-center items-center px-4 pt-20 relative overflow-hidden border-b-4 border-black">
-    <div class="absolute top-1/3 left-[10%] w-16 h-16 bg-neo-blue border-4 border-black shadow-hard animate-bounce hidden lg:block rotate-12">
+    <div
+      class="absolute top-1/3 left-[10%] w-16 h-16 bg-neo-blue border-4 border-black shadow-hard animate-bounce hidden lg:block rotate-12">
     </div>
-    <div class="absolute bottom-1/3 right-[10%] w-24 h-24 bg-neo-pink rounded-full border-4 border-black shadow-hard hidden lg:block animate-pulse">
+    <div
+      class="absolute bottom-1/3 right-[10%] w-24 h-24 bg-neo-pink rounded-full border-4 border-black shadow-hard hidden lg:block animate-pulse">
     </div>
     <div class="absolute top-20 right-20 text-9xl opacity-5 font-black select-none pointer-events-none">CODE</div>
 
@@ -251,13 +143,15 @@
         <span class="font-mono font-bold">SYSTEM STATUS: ONLINE</span>
       </div>
 
-      <h1 class="text-[13vw] md:text-[10vw] leading-[0.8] font-black uppercase tracking-tighter mb-6 reveal mix-blend-darken">
+      <h1
+        class="text-[13vw] md:text-[10vw] leading-[0.8] font-black uppercase tracking-tighter mb-6 reveal mix-blend-darken">
         AI & DS<br>
         <span class="text-white text-stroke-black" style="-webkit-text-stroke: 3px black;">STUDENT</span>
       </h1>
 
       <!-- Improved Hero Subtitle -->
-      <p class="font-mono text-lg md:text-2xl max-w-2xl mx-auto mb-10 bg-neo-yellow border-2 border-black p-4 shadow-hard reveal rotate-1">
+      <p
+        class="font-mono text-lg md:text-2xl max-w-2xl mx-auto mb-10 bg-neo-yellow border-2 border-black p-4 shadow-hard reveal rotate-1">
         Building bold AI-powered digital experiences with clean code and brutalist aesthetics.<br>
         <b>React • Python • Java • Node</b>
       </p>
@@ -280,7 +174,8 @@
   <div class="border-b-4 border-black bg-neo-blue py-3 relative z-20">
     <div class="marquee-container font-mono font-bold text-2xl text-white">
       <div class="marquee-content">
-        /// OPEN FOR WORK /// FULL STACK DEVELOPMENT /// UI/UX DESIGN /// WEB3 READY /// ACCESSIBLE /// FAST /// SECURE /// OPEN FOR WORK /// FULL STACK DEVELOPMENT ///
+        /// OPEN FOR WORK /// FULL STACK DEVELOPMENT /// AI & DATA SCIENCE /// ACCESSIBLE /// FAST /// SECURE /// OPEN
+        FOR WORK /// FULL STACK DEVELOPMENT ///
       </div>
     </div>
   </div>
@@ -292,13 +187,15 @@
         <div class="aspect-square bg-gray-200 border-4 border-black relative shadow-hard overflow-hidden group">
           <img src="Assets/images/img.jpg" alt="Subash M" loading="lazy" onerror="this.src='Assets/images/fallback.jpg'"
             class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
-          <span class="absolute top-2 left-2 bg-neo-red text-white px-2 font-mono text-xs border border-black z-10">AVATAR.JPG</span>
+          <span
+            class="absolute top-2 left-2 bg-neo-red text-white px-2 font-mono text-xs border border-black z-10">AVATAR.JPG</span>
         </div>
       </div>
       <div class="md:col-span-8 flex flex-col justify-center reveal">
         <h2 class="text-6xl font-black uppercase mb-6">Who am I?</h2>
         <p class="font-mono text-xl leading-relaxed mb-6">
-          I am Subash M — an <span class="bg-neo-yellow px-1 border border-black">AI & Data Science student</span> and an aspiring learner. I turn complex problems into clean, bold digital solutions.
+          I am Subash M — an <span class="bg-neo-yellow px-1 border border-black">AI & Data Science student</span> and
+          an aspiring learner. I turn complex problems into clean, bold digital solutions.
         </p>
         <p class="font-mono text-lg mb-8 text-gray-600 border-l-4 border-neo-purple pl-4">
           > Passionate about AI, Machine Learning, and Full Stack Development.<br>
@@ -319,10 +216,13 @@
 
   <!-- Skills Section (improved category labels) -->
   <section id="skills" class="py-20 bg-neo-black text-neo-white border-y-4 border-black relative overflow-hidden">
-    <div class="absolute inset-0 opacity-20" style="background-image: linear-gradient(#333 1px, transparent 1px), linear-gradient(90deg, #333 1px, transparent 1px); background-size: 40px 40px;"></div>
+    <div class="absolute inset-0 opacity-20"
+      style="background-image: linear-gradient(#333 1px, transparent 1px), linear-gradient(90deg, #333 1px, transparent 1px); background-size: 40px 40px;">
+    </div>
     <div class="max-w-[1400px] mx-auto px-4 relative z-10">
       <div class="flex flex-col md:flex-row justify-between items-end mb-12 border-b-4 border-white pb-4">
-        <h2 class="text-6xl md:text-8xl font-black uppercase text-white tracking-tighter">TECH<span class="text-neo-green">_STACK</span></h2>
+        <h2 class="text-6xl md:text-8xl font-black uppercase text-white tracking-tighter">TECH<span
+            class="text-neo-green">_STACK</span></h2>
         <div class="flex items-center gap-2 mb-2 md:mb-4">
           <div class="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
           <p class="font-mono text-neo-green text-sm font-bold">/// SYSTEM_OPTIMIZED</p>
@@ -330,36 +230,102 @@
       </div>
       <div class="flex flex-wrap justify-center md:justify-start">
         <!-- FRONTEND -->
-        <div class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-white transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2"><div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ FRONTEND</div><div class="text-white group-hover:text-black font-black font-display text-xl uppercase">REACT</div></div>
-        <div class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-yellow transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2"><div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ FRAMEWORK</div><div class="text-white group-hover:text-black font-black font-display text-xl uppercase">NEXT.JS</div></div>
-        <div class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-blue transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2"><div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ LANGUAGE</div><div class="text-white group-hover:text-black font-black font-display text-xl uppercase">Python</div></div>
-        <div class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-green transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2"><div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ BACKEND</div><div class="text-white group-hover:text-black font-black font-display text-xl uppercase">NODE.JS</div></div>
-        <div class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-pink transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2"><div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ STYLING</div><div class="text-white group-hover:text-black font-black font-display text-xl uppercase">TAILWIND</div></div>
-        <div class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-purple transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2"><div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ DATABASE</div><div class="text-white group-hover:text-black font-black font-display text-xl uppercase">MySQL</div></div>
-        <div class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-orange transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2"><div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ CORE</div><div class="text-white group-hover:text-black font-black font-display text-xl uppercase">HTML5</div></div>
-        <div class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-white transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2"><div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ TOOLS</div><div class="text-white group-hover:text-black font-black font-display text-xl uppercase">GIT</div></div>
-        <div class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-white transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2"><div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ CLOUD</div><div class="text-white group-hover:text-black font-black font-display text-xl uppercase">AWS</div></div>
-        <div class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-blue transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2"><div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ OPS</div><div class="text-white group-hover:text-black font-black font-display text-xl uppercase">GitHub</div></div>
-        <div class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-orange transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2"><div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ LANGUAGE</div><div class="text-white group-hover:text-black font-black font-display text-xl uppercase">JAVA</div></div>
-        <div class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-yellow transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2"><div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ FRAMEWORK</div><div class="text-white group-hover:text-black font-black font-display text-xl uppercase">Django</div></div>
-        <div class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-pink transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2"><div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ LANGUAGE</div><div class="text-white group-hover:text-black font-black font-display text-xl uppercase">PHP</div></div>
-        <div class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-white transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2"><div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ STYLE</div><div class="text-white group-hover:text-black font-black font-display text-xl uppercase">CSS</div></div>
-        <div class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-green transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2"><div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ MICRO</div><div class="text-white group-hover:text-black font-black font-display text-xl uppercase">FLASK</div></div>
-        <div class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-purple transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2"><div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ LANGUAGE</div><div class="text-white group-hover:text-black font-black font-display text-xl uppercase">C++</div></div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-white transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ FRONTEND</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">REACT</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-yellow transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ FRAMEWORK</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">NEXT.JS</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-blue transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ LANGUAGE</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">Python</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-green transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ BACKEND</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">NODE.JS</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-pink transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ STYLING</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">TAILWIND</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-purple transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ DATABASE</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">MySQL</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-orange transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ CORE</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">HTML5</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-white transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ TOOLS</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">GIT</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-white transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ CLOUD</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">AWS</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-blue transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ OPS</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">GitHub</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-orange transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ LANGUAGE</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">JAVA</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-yellow transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ FRAMEWORK</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">Django</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-pink transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ LANGUAGE</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">PHP</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-white transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ STYLE</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">CSS</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-green transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ MICRO</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">FLASK</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-purple transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ LANGUAGE</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">C++</div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Experience Section (fresher placeholder) -->
   <section id="experience" class="py-24 px-4 max-w-7xl mx-auto">
-    <h2 class="text-5xl md:text-8xl font-black uppercase mb-12 tracking-tighter text-center">Experience<span class="text-neo-red">_Log</span></h2>
+    <h2 class="text-5xl md:text-8xl font-black uppercase mb-12 tracking-tighter text-center">Experience<span
+        class="text-neo-red">_Log</span></h2>
     <div class="relative border-l-4 border-black ml-4 md:ml-10 space-y-12">
       <div class="reveal relative pl-8 md:pl-16">
         <div class="absolute -left-[14px] top-2 w-6 h-6 bg-neo-yellow border-4 border-black"></div>
         <div class="bg-white border-4 border-black p-8 shadow-hard hover:shadow-hard-xl transition-all text-center">
           <i class="ri-database-2-line text-6xl text-neo-green mb-4 block"></i>
           <h3 class="text-2xl font-black uppercase mb-2">No Experience Logs Yet</h3>
-          <p class="font-mono text-gray-600">I'm a fresher, eager to learn and grow. Future milestones will be recorded here.<br>Ready to take on challenges and build real-world projects.</p>
+          <p class="font-mono text-gray-600">I'm a fresher, eager to learn and grow. Future milestones will be recorded
+            here.<br>Ready to take on challenges and build real-world projects.</p>
         </div>
       </div>
     </div>
@@ -368,66 +334,83 @@
   <!-- Projects Section (REAL projects added) -->
   <section id="projects" class="py-24 bg-neo-yellow border-t-4 border-black px-4 overflow-hidden">
     <div class="max-w-7xl mx-auto">
-      <h2 class="text-6xl md:text-9xl font-black mb-16 uppercase tracking-tighter text-white drop-shadow-[4px_4px_0_rgba(0,0,0,1)] text-stroke-black" style="-webkit-text-stroke: 3px black;">Selected Works</h2>
+      <h2
+        class="text-6xl md:text-9xl font-black mb-16 uppercase tracking-tighter text-white drop-shadow-[4px_4px_0_rgba(0,0,0,1)] text-stroke-black"
+        style="-webkit-text-stroke: 3px black;">Selected Works</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-        <!-- Project 1: AI Chatbot -->
-        <div class="bg-white border-4 border-black p-6 shadow-hard hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all reveal">
-          <div class="flex justify-between items-center mb-4">
-            <h3 class="text-3xl font-black uppercase">AI Chatbot</h3>
-            <span class="bg-neo-green border-2 border-black px-2 py-1 font-mono text-xs">LIVE</span>
+        <!-- Project: TrackMe App -->
+        <article class="reveal group bg-white border-4 border-black p-4 shadow-hard">
+          <div class="bg-black border-2 border-black aspect-video relative overflow-hidden mb-6">
+            <img src="Assets/images/trackme.png" alt="TrackMe App" loading="lazy"
+              onerror="this.src='Assets/images/img.jpg'"
+              class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
           </div>
-          <p class="font-mono text-gray-700 mb-6">AI-powered chatbot built using Python and Flask with responsive frontend integration.</p>
-          <div class="flex flex-wrap gap-2 mb-6">
-            <span class="border-2 border-black px-2 py-1 text-xs font-mono">Python</span>
-            <span class="border-2 border-black px-2 py-1 text-xs font-mono">Flask</span>
-            <span class="border-2 border-black px-2 py-1 text-xs font-mono">HTML</span>
-            <span class="border-2 border-black px-2 py-1 text-xs font-mono">CSS</span>
+          <div class="flex justify-between items-start">
+            <div>
+              <h3 class="text-4xl font-black uppercase mb-2 group-hover:text-neo-red transition-colors glitch-hover">
+                TrackMe App</h3>
+              <p class="font-mono text-sm mb-4 max-w-xs">A tracking application for monitoring and managing real-time
+                activity and stats.</p>
+              <div class="flex gap-2 font-mono text-xs font-bold flex-wrap">
+                <span class="bg-neo-black text-white px-2 py-1">React</span>
+                <span class="bg-neo-black text-white px-2 py-1">Node.js</span>
+                <span class="bg-neo-black text-white px-2 py-1">Tailwind</span>
+              </div>
+            </div>
+            <a href="https://github.com/subasmk/trackme"
+              class="w-12 h-12 border-2 border-black bg-neo-green flex items-center justify-center hover:bg-black hover:text-white transition-all shadow-hard-sm cursor-hover">
+              <i class="ri-arrow-right-up-line text-2xl"></i>
+            </a>
           </div>
-          <div class="flex gap-4">
-            <a href="#" class="bg-black text-white px-4 py-2 border-2 border-black font-bold hover:bg-neo-green hover:text-black transition-all">VIEW</a>
-            <a href="#" class="bg-white px-4 py-2 border-2 border-black font-bold hover:bg-neo-yellow transition-all">SOURCE</a>
-          </div>
-        </div>
-        <!-- Project 2: Portfolio V2 -->
-        <div class="bg-white border-4 border-black p-6 shadow-hard hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all reveal">
-          <div class="flex justify-between items-center mb-4">
-            <h3 class="text-3xl font-black uppercase">Portfolio V2</h3>
-            <span class="bg-neo-blue border-2 border-black px-2 py-1 font-mono text-xs">FEATURED</span>
-          </div>
-          <p class="font-mono text-gray-700 mb-6">NeoBrutalist developer portfolio with animations, GitHub integration and responsive design.</p>
-          <div class="flex flex-wrap gap-2 mb-6">
-            <span class="border-2 border-black px-2 py-1 text-xs font-mono">Tailwind</span>
-            <span class="border-2 border-black px-2 py-1 text-xs font-mono">JavaScript</span>
-            <span class="border-2 border-black px-2 py-1 text-xs font-mono">Responsive UI</span>
-          </div>
-          <div class="flex gap-4">
-            <a href="#" class="bg-black text-white px-4 py-2 border-2 border-black font-bold hover:bg-neo-pink hover:text-black transition-all">VIEW</a>
-            <a href="#" class="bg-white px-4 py-2 border-2 border-black font-bold hover:bg-neo-yellow transition-all">SOURCE</a>
-          </div>
-        </div>
+        </article>
       </div>
-      <div class="text-center mt-12"><a href="https://github.com/subasmk?tab=repositories" class="inline-block bg-neo-black text-white px-12 py-5 font-bold font-mono text-xl hover:bg-neo-white hover:text-black border-4 border-black transition-all shadow-hard hover:shadow-none cursor-hover">VIEW ALL REPOS ON GITHUB</a></div>
+      <div class="text-center mt-12"><a href="https://github.com/subasmk?tab=repositories"
+          class="inline-block bg-neo-black text-white px-12 py-5 font-bold font-mono text-xl hover:bg-neo-white hover:text-black border-4 border-black transition-all shadow-hard hover:shadow-none cursor-hover">VIEW
+          ALL REPOS ON GITHUB</a></div>
     </div>
   </section>
 
   <!-- Contact Section -->
   <section id="contact" class="py-24 px-4 max-w-5xl mx-auto">
     <div class="bg-white border-4 border-black shadow-hard-xl p-8 md:p-12 relative reveal mt-12">
-      <div class="absolute -top-10 -left-6 bg-neo-yellow border-4 border-black px-6 py-2 shadow-hard rotate-[-5deg]"><span class="font-black text-2xl">START A PROJECT</span></div>
+      <div class="absolute -top-10 -left-6 bg-neo-yellow border-4 border-black px-6 py-2 shadow-hard rotate-[-5deg]">
+        <span class="font-black text-2xl">START A PROJECT</span>
+      </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
         <div>
           <h2 class="text-6xl font-black uppercase mb-6 leading-[0.85]">Let's<br>Talk<br>Code.</h2>
-          <p class="font-mono text-lg mb-8 text-gray-600">I am available for freelance work, internships, and entry-level full-time opportunities.</p>
+          <p class="font-mono text-lg mb-8 text-gray-600">I am available for freelance work, internships, and
+            entry-level full-time opportunities.</p>
           <div class="space-y-4">
-            <div class="flex items-center gap-4"><div class="w-12 h-12 bg-neo-black text-white flex items-center justify-center border-2 border-black"><i class="ri-mail-line text-xl"></i></div><a href="mailto:mksubash2809@gmail.com" class="text-xl font-bold hover:bg-neo-blue cursor-hover">mksubash2809@gmail.com</a></div>
-            <div class="flex items-center gap-4"><div class="w-12 h-12 bg-neo-black text-white flex items-center justify-center border-2 border-black"><i class="ri-map-pin-line text-xl"></i></div><span class="text-xl font-bold">Remote / Earth</span></div>
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-neo-black text-white flex items-center justify-center border-2 border-black"><i
+                  class="ri-mail-line text-xl"></i></div><a href="mailto:mksubash2809@gmail.com"
+                class="text-xl font-bold hover:bg-neo-blue cursor-hover">mksubash2809@gmail.com</a>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-neo-black text-white flex items-center justify-center border-2 border-black"><i
+                  class="ri-map-pin-line text-xl"></i></div><span class="text-xl font-bold">Remote / Earth</span>
+            </div>
           </div>
         </div>
-        <form id="contact-form" class="space-y-6 bg-gray-50 p-6 border-2 border-black" onsubmit="event.preventDefault(); this.innerHTML='<div class=\'py-20 text-center\'><i class=\'ri-checkbox-circle-fill text-6xl text-neo-green mb-4 block\'></i><h3 class=\'text-2xl font-black uppercase\'>Transmission Received</h3><p class=\'font-mono text-sm mt-2\'>System response initialized. I will reach out shortly.</p></div>'">
-          <div class="flex flex-col"><label class="font-mono font-bold mb-1 uppercase text-xs">Identity</label><input type="text" placeholder="NAME / COMPANY" class="bg-white border-2 border-black p-3 font-bold focus:outline-none focus:bg-neo-yellow focus:shadow-hard-sm transition-all cursor-hover"></div>
-          <div class="flex flex-col"><label class="font-mono font-bold mb-1 uppercase text-xs">Coordinates</label><input type="email" placeholder="EMAIL ADDRESS" class="bg-white border-2 border-black p-3 font-bold focus:outline-none focus:bg-neo-yellow focus:shadow-hard-sm transition-all cursor-hover"></div>
-          <div class="flex flex-col"><label class="font-mono font-bold mb-1 uppercase text-xs">Transmission</label><textarea rows="4" placeholder="PROJECT DETAILS..." class="bg-white border-2 border-black p-3 font-bold focus:outline-none focus:bg-neo-yellow focus:shadow-hard-sm transition-all resize-none cursor-hover"></textarea></div>
-          <button type="submit" class="w-full bg-neo-blue text-white font-black text-xl py-4 border-2 border-black shadow-hard neo-button hover:bg-neo-black hover:translate-y-1 hover:shadow-none transition-all cursor-hover">TRANSMIT DATA</button>
+        <form id="contact-form" class="space-y-6 bg-gray-50 p-6 border-2 border-black"
+          onsubmit="event.preventDefault(); this.innerHTML='<div class=\'py-20 text-center\'><i class=\'ri-checkbox-circle-fill text-6xl text-neo-green mb-4 block\'></i><h3 class=\'text-2xl font-black uppercase\'>Transmission Received</h3><p class=\'font-mono text-sm mt-2\'>System response initialized. I will reach out shortly.</p></div>'">
+          <div class="flex flex-col"><label class="font-mono font-bold mb-1 uppercase text-xs">Identity</label><input
+              type="text" placeholder="NAME / COMPANY"
+              class="bg-white border-2 border-black p-3 font-bold focus:outline-none focus:bg-neo-yellow focus:shadow-hard-sm transition-all cursor-hover">
+          </div>
+          <div class="flex flex-col"><label class="font-mono font-bold mb-1 uppercase text-xs">Coordinates</label><input
+              type="email" placeholder="EMAIL ADDRESS"
+              class="bg-white border-2 border-black p-3 font-bold focus:outline-none focus:bg-neo-yellow focus:shadow-hard-sm transition-all cursor-hover">
+          </div>
+          <div class="flex flex-col"><label
+              class="font-mono font-bold mb-1 uppercase text-xs">Transmission</label><textarea rows="4"
+              placeholder="PROJECT DETAILS..."
+              class="bg-white border-2 border-black p-3 font-bold focus:outline-none focus:bg-neo-yellow focus:shadow-hard-sm transition-all resize-none cursor-hover"></textarea>
+          </div>
+          <button type="submit"
+            class="w-full bg-neo-blue text-white font-black text-xl py-4 border-2 border-black shadow-hard neo-button hover:bg-neo-black hover:translate-y-1 hover:shadow-none transition-all cursor-hover">TRANSMIT
+            DATA</button>
         </form>
       </div>
     </div>
@@ -436,65 +419,49 @@
   <!-- Footer with improved copyright -->
   <footer class="bg-black text-white py-16 px-4 border-t-8 border-neo-green font-mono relative overflow-hidden">
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 relative z-10">
-      <div class="col-span-1 md:col-span-2"><h2 class="text-4xl font-black mb-6">SUBASH M.</h2><p class="text-gray-400 max-w-sm">AI & DS student, aspiring developer. Designing for the future with raw aesthetics.</p></div>
-      <div><h3 class="font-bold text-neo-green mb-4 border-b border-gray-700 pb-2">SITEMAP</h3><ul class="space-y-2 text-gray-400"><li><a href="#" class="hover:text-white hover:underline decoration-neo-pink decoration-2 cursor-hover">Home</a></li><li><a href="#projects" class="hover:text-white hover:underline decoration-neo-pink decoration-2 cursor-hover">Works</a></li><li><a href="#about" class="hover:text-white hover:underline decoration-neo-pink decoration-2 cursor-hover">About</a></li><li><a href="#contact" class="hover:text-white hover:underline decoration-neo-pink decoration-2 cursor-hover">Contact</a></li></ul></div>
-      <div><h3 class="font-bold text-neo-green mb-4 border-b border-gray-700 pb-2">SOCIALS</h3><div class="flex gap-4"><a href="https://leetcode.com/u/subas_mk/" class="text-2xl hover:text-neo-blue transition-colors cursor-hover"><i class="ri-code-fill"></i></a><a href="https://www.instagram.com/ofc.not_arham" class="text-2xl hover:text-neo-pink transition-colors cursor-hover"><i class="ri-instagram-fill"></i></a><a href="https://github.com/subasmk" class="text-2xl hover:text-neo-yellow transition-colors cursor-hover"><i class="ri-github-fill"></i></a><a href="https://www.linkedin.com/in/subasmk/" class="text-2xl hover:text-neo-purple transition-colors cursor-hover"><i class="ri-linkedin-fill"></i></a></div></div>
+      <div class="col-span-1 md:col-span-2">
+        <h2 class="text-4xl font-black mb-6">SUBASH M.</h2>
+        <p class="text-gray-400 max-w-sm">AI & DS student, aspiring developer. Designing for the future with raw
+          aesthetics.</p>
+      </div>
+      <div>
+        <h3 class="font-bold text-neo-green mb-4 border-b border-gray-700 pb-2">SITEMAP</h3>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="#"
+              class="hover:text-white hover:underline decoration-neo-pink decoration-2 cursor-hover">Home</a></li>
+          <li><a href="#projects"
+              class="hover:text-white hover:underline decoration-neo-pink decoration-2 cursor-hover">Works</a></li>
+          <li><a href="#about"
+              class="hover:text-white hover:underline decoration-neo-pink decoration-2 cursor-hover">About</a></li>
+          <li><a href="#contact"
+              class="hover:text-white hover:underline decoration-neo-pink decoration-2 cursor-hover">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold text-neo-green mb-4 border-b border-gray-700 pb-2">SOCIALS</h3>
+        <div class="flex gap-4"><a href="https://leetcode.com/u/subas_mk/"
+            class="text-2xl hover:text-neo-blue transition-colors cursor-hover"><i class="ri-code-fill"></i></a><a
+            href="https://www.instagram.com/ofc.not_arham"
+            class="text-2xl hover:text-neo-pink transition-colors cursor-hover"><i class="ri-instagram-fill"></i></a><a
+            href="https://github.com/subasmk" class="text-2xl hover:text-neo-yellow transition-colors cursor-hover"><i
+              class="ri-github-fill"></i></a><a href="https://www.linkedin.com/in/subasmk/"
+            class="text-2xl hover:text-neo-purple transition-colors cursor-hover"><i class="ri-linkedin-fill"></i></a>
+        </div>
+      </div>
     </div>
-    <div class="text-center mt-16 pt-8 border-t border-gray-800 text-gray-500 text-sm"><p>© 2026 SUBASH M • Built with React, Tailwind & Chaos.</p></div>
-    <div class="absolute bottom-0 left-0 w-full text-[20vw] font-black text-white opacity-[0.03] leading-none select-none pointer-events-none text-center">BRUTAL</div>
+    <div class="text-center mt-16 pt-8 border-t border-gray-800 text-gray-500 text-sm">
+      <p>© 2026 SUBASH M • Built with React, Tailwind & Chaos.</p>
+    </div>
+    <div
+      class="absolute bottom-0 left-0 w-full text-[20vw] font-black text-white opacity-[0.03] leading-none select-none pointer-events-none text-center">
+      BRUTAL</div>
   </footer>
 
   <!-- Scroll To Top Button -->
-  <button id="scrollTopBtn" class="fixed bottom-6 right-6 bg-neo-yellow border-4 border-black p-4 shadow-hard hidden z-50 hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all cursor-pointer">↑</button>
+  <button id="scrollTopBtn"
+    class="fixed bottom-6 right-6 bg-neo-yellow border-4 border-black p-4 shadow-hard hidden z-50 hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all cursor-pointer">↑</button>
 
-  <script>
-    // Custom cursor logic
-    const cursor = document.getElementById('cursor');
-    const hoverElements = document.querySelectorAll('.cursor-hover, a, button, input, textarea');
-    if (cursor) {
-      document.addEventListener('mousemove', (e) => { cursor.style.left = e.clientX + 'px'; cursor.style.top = e.clientY + 'px'; cursor.style.transform = `translate(-50%, -50%)`; });
-      hoverElements.forEach(el => { el.addEventListener('mouseenter', () => { cursor.style.width = '60px'; cursor.style.height = '60px'; cursor.style.backgroundColor = '#FBFF48'; cursor.style.mixBlendMode = 'normal'; cursor.style.border = '2px solid black'; }); el.addEventListener('mouseleave', () => { cursor.style.width = '24px'; cursor.style.height = '24px'; cursor.style.backgroundColor = '#fff'; cursor.style.mixBlendMode = 'difference'; cursor.style.border = 'none'; }); });
-    }
-
-    // GitHub API integration (fixed: repositories count instead of fake commits)
-    async function fetchGitHubStats() {
-      try {
-        const res = await fetch('https://api.github.com/users/subasmk');
-        if (!res.ok) throw new Error();
-        const data = await res.json();
-        document.getElementById('repos-count') && (document.getElementById('repos-count').textContent = data.public_repos || '0');
-        document.getElementById('followers-count') && (document.getElementById('followers-count').textContent = data.followers || '0');
-        if (data.created_at) {
-          const date = new Date(data.created_at);
-          document.getElementById('created-at') && (document.getElementById('created-at').textContent = date.toLocaleDateString('en-US', { year: 'numeric', month: 'short' }));
-        }
-        // Fixed: Show actual repositories count (not fake commit math)
-        const repoCount = data.public_repos || '0';
-        document.getElementById('total-contributions') && (document.getElementById('total-contributions').textContent = repoCount);
-        document.getElementById('total-contributions-grid') && (document.getElementById('total-contributions-grid').textContent = repoCount);
-      } catch(e) { console.error(e); }
-    }
-    fetchGitHubStats();
-
-    // Scroll reveal and progress bar
-    const revealElements = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver((entries) => { entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('active'); }); }, { threshold: 0.1 });
-    revealElements.forEach(el => observer.observe(el));
-    window.onscroll = function() { 
-      let winScroll = document.body.scrollTop || document.documentElement.scrollTop; 
-      let height = document.documentElement.scrollHeight - document.documentElement.clientHeight; 
-      document.getElementById("progressBar") && (document.getElementById("progressBar").style.width = ((winScroll / height) * 100) + "%");
-    };
-
-    // Scroll to top button
-    const scrollBtn = document.getElementById('scrollTopBtn');
-    if (scrollBtn) {
-      window.addEventListener('scroll', () => {
-        if (window.scrollY > 300) scrollBtn.classList.remove('hidden');
-        else scrollBtn.classList.add('hidden');
-      });
-      scrollBtn.addEventListener('click', () => { window.scrollTo({ top: 0, behavior: 'smooth' }); });
-    }
-  </script>
+  <script src="script.js" defer></script>
 </body>
+
 </html>
