@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const h = document.documentElement;
     const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
     if (progressBar) progressBar.style.width = pct + '%';
-    if (scrollBtn) scrollBtn.classList.toggle('show', h.scrollTop > 400);
+    if (scrollBtn) scrollBtn.classList.toggle('hidden', h.scrollTop <= 400);
   }, { passive: true });
   if (scrollBtn) scrollBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
