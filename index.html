@@ -1,319 +1,471 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Subash Mk - AI & Data Science student and full stack builder. I ship real products: TrackMe, an open-source Android habit tracker, and MockMentor, an AI mock-interview platform.">
-  <meta name="keywords" content="Subash Mk, subasmk, AI, Data Science, Full Stack Developer, GenAI, LLM, Portfolio, TrackMe, MockMentor, App Development">
-  <meta name="author" content="Subash Mk">
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Subash M | AI & DS Student and aspiring Full Stack Developer. Building bold AI-powered digital experiences with clean code and brutalist aesthetics.">
+  <meta name="keywords"
+    content="Subash M, AI, Data Science, Full Stack Developer, NeoBrutalist, Portfolio, Web Development, React, Python, Flask">
+  <meta name="author" content="Subash M">
   <link rel="canonical" href="https://subasmk.vercel.app/">
 
+  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://subasmk.vercel.app/">
-  <meta property="og:title" content="SUBASH MK | AI & DS Student, Full Stack Builder">
-  <meta property="og:description" content="I build and ship real products - TrackMe (Android habit tracker) and MockMentor (AI mock interviews). GenAI, full stack, app dev.">
-  <meta property="og:image" content="Assets/images/trackme.png">
+  <meta property="og:title" content="SUBASH M | AI & DS Student">
+  <meta property="og:description"
+    content="AI & Data Science student and aspiring Full Stack Developer. Building bold AI-powered digital experiences.">
+  <meta property="og:image" content="Assets/images/phisgaurd.png">
+
+  <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:title" content="SUBASH MK | AI & DS Student, Full Stack Builder">
-  <meta property="twitter:description" content="I build and ship real products - TrackMe and MockMentor. GenAI, full stack, app dev.">
-  <meta property="twitter:image" content="Assets/images/trackme.png">
+  <meta property="twitter:url" content="https://subasmk.vercel.app/">
+  <meta property="twitter:title" content="SUBASH M | AI & DS Student">
+  <meta property="twitter:description"
+    content="AI & Data Science student and aspiring Full Stack Developer. Building the future with raw aesthetics.">
+  <meta property="twitter:image" content="Assets/images/phisgaurd.png">
 
-  <title>SUBASH MK | AI & DS Student · Builder</title>
-  <meta name="theme-color" content="#050810">
+  <title>SUBASH M | AI & DS Student</title>
 
+  <!-- Theme & Performance -->
+  <meta name="theme-color" content="#121212">
+  <link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&family=Space+Grotesk:wght@800&display=swap"
+    as="style">
+
+  <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Subash Mk",
-    "url": "https://subasmk.vercel.app/",
-    "jobTitle": "AI & Data Science Student / Full Stack Builder",
-    "knowsAbout": ["Generative AI", "LLMs", "React", "Python", "Java", "Node.js", "Android App Development", "Supabase", "Cybersecurity"],
-    "sameAs": [
-      "https://github.com/subasmk",
-      "https://leetcode.com/u/subas_mk/",
-      "https://www.linkedin.com/in/subasmk/",
-      "https://www.instagram.com/subasmk"
-    ]
-  }
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Subash M",
+      "url": "https://subasmk.vercel.app/",
+      "jobTitle": "AI & DS Student / Aspiring Developer",
+      "image": "Assets/images/logo.png",
+      "knowsAbout": ["React", "Python", "Java", "Node.js", "Django", "AWS", "CSS", "Flask", "UI/UX Design", "NeoBrutalist Design"],
+      "sameAs": [
+        "https://github.com/subasmk",
+        "https://leetcode.com/u/subasmk/"
+      ],
+      "description": "AI & Data Science student and aspiring Full Stack Developer. Passionate about building bold digital experiences."
+    }
   </script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'neo-yellow': '#FBFF48',
+            'neo-pink': '#FF70A6',
+            'neo-blue': '#3B82F6',
+            'neo-green': '#33FF57',
+            'neo-purple': '#A855F7',
+            'neo-orange': '#FF9F1C',
+            'neo-red': '#FF2A2A',
+            'neo-white': '#FFFDF5',
+            'neo-black': '#121212',
+          },
+          fontFamily: {
+            'display': ['"Space Grotesk"', 'sans-serif'],
+            'mono': ['"JetBrains Mono"', 'monospace'],
+          },
+          boxShadow: {
+            'hard': '4px 4px 0px 0px #000',
+            'hard-sm': '2px 2px 0px 0px #000',
+            'hard-lg': '8px 8px 0px 0px #000',
+            'hard-xl': '12px 12px 0px 0px #000',
+          }
+        }
+      }
+    }
+  </script>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="icon" href="Assets/images/title_icon.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=Space+Grotesk:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
 
-  <div id="cursor" aria-hidden="true"></div>
-  <div id="cursor-ring" aria-hidden="true"></div>
-  <div id="progressBar" aria-hidden="true"></div>
+<body class="text-neo-black font-display antialiased selection:bg-neo-black selection:text-neo-yellow">
 
-  <!-- ============ NAV ============ -->
-  <nav id="nav">
-    <div class="nav-inner">
-      <a href="#top" class="logo cursor-hover">SUBASH<span>.MK</span><i class="blink">_</i></a>
-      <div class="nav-links" id="navLinks">
-        <a href="#about" class="cursor-hover">about</a>
-        <a href="#projects" class="cursor-hover">projects</a>
-        <a href="#skills" class="cursor-hover">skills</a>
-        <a href="#journey" class="cursor-hover">journey</a>
-        <a href="#contact" class="nav-cta cursor-hover">contact</a>
+  <div id="cursor" class="w-6 h-6 bg-white rounded-full border-2 border-black hidden lg:block"></div>
+
+  <div class="fixed top-0 left-0 h-2 bg-neo-green z-[60] border-b-2 border-black" id="progressBar" style="width: 0%">
+  </div>
+
+  <!-- Improved Navbar with blur effect -->
+  <nav
+    class="fixed top-0 w-full z-50 px-4 py-4 backdrop-blur-md bg-white/70 border-b border-black/10 pointer-events-none">
+    <div class="max-w-7xl mx-auto flex justify-between items-center pointer-events-auto">
+      <a href="#"
+        class="bg-neo-white border-2 border-black px-4 py-1 text-2xl font-black shadow-hard hover:bg-neo-yellow transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-none cursor-hover">
+        SUBASH.exe
+      </a>
+
+      <div class="hidden md:flex gap-4 bg-white/90 backdrop-blur-sm border-2 border-black p-2 shadow-hard">
+        <a href="#about"
+          class="px-3 py-1 font-mono font-bold text-sm hover:bg-black hover:text-white transition-colors cursor-hover">/ABOUT</a>
+        <a href="#skills"
+          class="px-3 py-1 font-mono font-bold text-sm hover:bg-black hover:text-white transition-colors cursor-hover">/SKILLS</a>
+        <a href="#experience"
+          class="px-3 py-1 font-mono font-bold text-sm hover:bg-black hover:text-white transition-colors cursor-hover">/LOGS</a>
+        <a href="#projects"
+          class="px-3 py-1 font-mono font-bold text-sm hover:bg-black hover:text-white transition-colors cursor-hover">/WORK</a>
+        <a href="#contact"
+          class="px-3 py-1 font-mono font-bold text-sm bg-neo-yellow border border-black hover:bg-neo-pink transition-colors cursor-hover">HIRE
+          ME</a>
       </div>
-      <button id="menuBtn" aria-label="menu"><i class="ri-menu-line"></i></button>
     </div>
   </nav>
 
-  <!-- ============ HERO ============ -->
-  <header id="top" class="hero">
-    <canvas id="particles"></canvas>
-    <div class="hero-glow g1"></div>
-    <div class="hero-glow g2"></div>
+  <!-- Hero Section -->
+  <section
+    class="min-h-screen flex flex-col justify-center items-center px-4 pt-20 relative overflow-hidden border-b-4 border-black">
+    <div
+      class="absolute top-1/3 left-[10%] w-16 h-16 bg-neo-blue border-4 border-black shadow-hard animate-bounce hidden lg:block rotate-12 hero-float">
+    </div>
+    <div
+      class="absolute bottom-1/3 right-[10%] w-24 h-24 bg-neo-pink rounded-full border-4 border-black shadow-hard hidden lg:block animate-pulse hero-orbit">
+    </div>
+    <div class="absolute top-20 right-20 text-9xl opacity-5 font-black select-none pointer-events-none">CODE</div>
 
-    <div class="hero-content">
-      <div class="status-chip reveal">
-        <span class="dot"></span> OPEN TO INTERNSHIPS &amp; COLLABS
+    <div class="relative z-10 text-center max-w-5xl">
+      <div class="inline-block bg-neo-white border-2 border-black px-4 py-1 mb-6 shadow-hard rotate-[-2deg] reveal">
+        <span class="font-mono font-bold text-neo-green bg-black px-2 mr-2">●</span>
+        <span class="font-mono font-bold">SYSTEM STATUS: ONLINE</span>
       </div>
-      <h1 class="reveal">
-        <span class="hi">hey, i'm</span>
-        <span class="name">SUBASH <em>MK</em></span>
+
+      <h1
+        class="text-[13vw] md:text-[10vw] leading-[0.8] font-black uppercase tracking-tighter mb-6 reveal mix-blend-darken">
+        AI & DS<br>
+        <span class="text-white text-stroke-black" style="-webkit-text-stroke: 3px black;">STUDENT</span>
       </h1>
-      <div class="typing-line reveal">
-        <span class="prompt">&gt;_</span> <span id="typer"></span><span class="caret">▍</span>
-      </div>
-      <p class="hero-sub reveal">
-        B.Tech AI &amp; Data Science student who doesn't just learn tech - I ship it.
-        Real apps, real users, real hackathons. Currently deep into
-        <b>GenAI</b>, <b>full stack</b> and <b>app development</b>.
+
+      <!-- Improved Hero Subtitle -->
+      <p
+        class="font-mono text-lg md:text-2xl max-w-2xl mx-auto mb-10 bg-neo-yellow border-2 border-black p-4 shadow-hard reveal rotate-1">
+        Building bold AI-powered digital experiences with clean code and brutalist aesthetics.<br>
+        <b>React • Python • Java • Node</b>
       </p>
-      <div class="hero-btns reveal">
-        <a href="#projects" class="btn btn-primary cursor-hover">VIEW MY WORK <i class="ri-arrow-right-line"></i></a>
-        <a href="https://github.com/subasmk" target="_blank" rel="noopener noreferrer" class="btn btn-ghost cursor-hover"><i class="ri-github-fill"></i> GITHUB</a>
-      </div>
-      <div class="hero-stats reveal">
-        <div class="stat"><b id="st-repos">-</b><span>public repos</span></div>
-        <div class="stat"><b id="st-followers">-</b><span>github followers</span></div>
-        <div class="stat"><b>2</b><span>products shipped</span></div>
-        <div class="stat"><b>1</b><span>hackathon submitted</span></div>
+
+      <div class="flex flex-col md:flex-row justify-center gap-6 reveal">
+        <a href="#projects"
+          class="bg-black text-white border-2 border-black px-10 py-5 text-xl font-bold shadow-hard hover:bg-neo-green hover:text-black hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all cursor-hover">
+          VIEW DATABASE
+        </a>
+        <!-- Improved Resume Button with target="_blank" and rel -->
+        <a href="subash-resume.pdf" download="Subash-Mk-Resume.pdf"
+          class="bg-neo-white text-black border-2 border-black px-10 py-5 text-xl font-bold shadow-hard hover:bg-neo-pink hover:text-black hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all cursor-hover flex items-center justify-center gap-2">
+          <i class="ri-download-line"></i> DOWNLOAD CV
+        </a>
       </div>
     </div>
+  </section>
 
-    <a href="#about" class="scroll-hint cursor-hover" aria-label="scroll down"><i class="ri-arrow-down-line"></i></a>
-  </header>
-
-  <!-- ============ MARQUEE ============ -->
-  <div class="marquee">
-    <div class="marquee-track">
-      <span>GENAI // LLM // FULL STACK // APP DEV // CYBERSECURITY // DATA SCIENCE // BUILDING IN PUBLIC // SHIP &gt; PERFECT //&nbsp;</span>
-      <span>GENAI // LLM // FULL STACK // APP DEV // CYBERSECURITY // DATA SCIENCE // BUILDING IN PUBLIC // SHIP &gt; PERFECT //&nbsp;</span>
+  <!-- Marquee Bar -->
+  <div class="border-b-4 border-black bg-neo-blue py-3 relative z-20">
+    <div class="marquee-container font-mono font-bold text-2xl text-white">
+      <div class="marquee-content">
+        /// OPEN FOR WORK /// FULL STACK DEVELOPMENT /// AI & DATA SCIENCE /// ACCESSIBLE /// FAST /// SECURE /// OPEN
+        FOR WORK /// FULL STACK DEVELOPMENT ///
+      </div>
     </div>
   </div>
 
-  <!-- ============ ABOUT ============ -->
-  <section id="about" class="section">
-    <div class="section-head reveal">
-      <span class="tag">01 // ABOUT</span>
-      <h2>the human behind<br>the <em>terminal</em></h2>
-    </div>
-    <div class="about-grid">
-      <div class="photo-card reveal">
-        <div class="photo-frame">
-          <img src="Assets/images/img.jpg" alt="Subash Mk" loading="lazy">
+  <!-- About Section (updated: AI & DS student with lazy loading) -->
+  <section id="about" class="py-24 px-4 max-w-7xl mx-auto border-x-4 border-black bg-white my-12 shadow-hard-lg">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+      <div class="md:col-span-4 reveal">
+        <div class="aspect-square bg-gray-200 border-4 border-black relative shadow-hard overflow-hidden group">
+          <img src="Assets/images/img.jpg" alt="Subash M" loading="lazy" onerror="this.src='Assets/images/fallback.jpg'"
+            class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+          <span
+            class="absolute top-2 left-2 bg-neo-red text-white px-2 font-mono text-xs border border-black z-10">AVATAR.JPG</span>
         </div>
-        <div class="photo-caption">./subash_mk <span class="ok">● online</span></div>
       </div>
-      <div class="about-text reveal">
-        <p class="lead">I'm a <b>polymath-in-progress</b> - learning cybersecurity, GenAI, LLMs, full stack and app development, all at once, in public.</p>
-        <p>I don't collect courses, I collect <b>shipped things</b>. An Android app with quests, streaks and an AI assistant. An AI interview platform built and submitted at a hackathon in a single day. A Smart India Hackathon entry. Every project teaches me more than any tutorial could.</p>
-        <div class="fact-grid">
-          <div class="fact"><i class="ri-graduation-cap-line"></i><div><b>EDUCATION</b><span>B.Tech, AI &amp; Data Science</span></div></div>
-          <div class="fact"><i class="ri-focus-3-line"></i><div><b>CURRENT FOCUS</b><span>GenAI · Full Stack · App Dev</span></div></div>
-          <div class="fact"><i class="ri-map-pin-line"></i><div><b>BASE</b><span>India · Remote-friendly</span></div></div>
-          <div class="fact"><i class="ri-pulse-line"></i><div><b>STATUS</b><span>Building, learning, shipping</span></div></div>
+      <div class="md:col-span-8 flex flex-col justify-center reveal">
+        <h2 class="text-6xl font-black uppercase mb-6">Who am I?</h2>
+        <p class="font-mono text-xl leading-relaxed mb-6">
+          I am Subash M — a <span class="bg-neo-yellow px-1 border border-black">B.Tech AI & Data Science student</span> at VSB College of Engineering Technical Campus (Class of 2029), with a 7.15 CGPA. I turn complex problems into clean, bold digital solutions.
+        </p>
+        <p class="font-mono text-lg mb-8 text-gray-600 border-l-4 border-neo-purple pl-4">
+          > Passionate about AI, Machine Learning, and Full Stack Development.<br>
+          > Always learning, always building, always pushing boundaries.<br>
+          > Currently exploring advanced web architectures, cloud computing, and cybersecurity.
+        </p>
+        <div class="flex flex-wrap gap-3 mb-6">
+          <span class="bg-neo-yellow px-3 py-2 border-2 border-black shadow-hard-sm font-mono text-sm">CGPA: 7.15</span>
+          <span class="bg-neo-pink px-3 py-2 border-2 border-black shadow-hard-sm font-mono text-sm">Pantech AI · Full Stack</span>
+          <span class="bg-neo-blue text-white px-3 py-2 border-2 border-black shadow-hard-sm font-mono text-sm">AWS · HCL GUVI</span>
+        </div>
+        <div class="flex gap-4">
+          <div class="bg-neo-black text-white px-4 py-2 font-mono text-sm border-2 border-transparent">
+            📍 COIMBATORE, TAMIL NADU
+          </div>
+          <div class="bg-neo-green text-black px-4 py-2 font-mono text-sm border-2 border-black">
+            🟢 STATUS: AVAILABLE FOR WORK
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ PROJECTS ============ -->
-  <section id="projects" class="section section-alt">
-    <div class="section-head reveal">
-      <span class="tag">02 // PROJECTS</span>
-      <h2>things i <em>shipped</em>,<br>not just started</h2>
+  <!-- Skills Section (improved category labels) -->
+  <section id="skills" class="py-20 bg-neo-black text-neo-white border-y-4 border-black relative overflow-hidden">
+    <div class="absolute inset-0 opacity-20"
+      style="background-image: linear-gradient(#333 1px, transparent 1px), linear-gradient(90deg, #333 1px, transparent 1px); background-size: 40px 40px;">
     </div>
-
-    <div class="projects">
-      <article class="project reveal tilt">
-        <div class="project-shot">
-          <img src="Assets/images/trackme.png" alt="TrackMe app" loading="lazy">
-          <div class="shot-overlay"><a href="https://github.com/subasmk/Track-Me" target="_blank" rel="noopener noreferrer" class="overlay-btn cursor-hover">OPEN REPO <i class="ri-arrow-right-up-line"></i></a></div>
-        </div>
-        <div class="project-body">
-          <div class="project-top">
-            <h3>TrackMe</h3>
-            <span class="badge b-cyan">v3.0 LIVE</span>
-          </div>
-          <p>Open-source Android habit tracker that turns self-improvement into a game - Solo-Leveling-style quests, streaks, home-screen widgets, a sloth mascot, a social layer, and an AI assistant you bring your own free key to.</p>
-          <div class="chips">
-            <span>Android</span><span>Supabase</span><span>GenAI / BYOK</span><span>Widgets</span><span>Open Source</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/subasmk/Track-Me" target="_blank" rel="noopener noreferrer" class="cursor-hover"><i class="ri-github-fill"></i> source</a>
-            <a href="https://github.com/subasmk/Track-Me/releases" target="_blank" rel="noopener noreferrer" class="cursor-hover"><i class="ri-download-2-line"></i> releases</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="project reveal tilt">
-        <div class="project-shot">
-          <img src="Assets/images/mockmentor.png" alt="MockMentor app" loading="lazy">
-          <div class="shot-overlay"><a href="https://mock-mentor-taupe.vercel.app/" target="_blank" rel="noopener noreferrer" class="overlay-btn cursor-hover">LIVE DEMO <i class="ri-arrow-right-up-line"></i></a></div>
-        </div>
-        <div class="project-body">
-          <div class="project-top">
-            <h3>MockMentor</h3>
-            <span class="badge b-violet">HACKATHON</span>
-          </div>
-          <p>AI mock-interview platform: paste your résumé, face an animated AI interviewer that speaks, and get expression + eye-contact analysis from your webcam. Designed, built and submitted in a single day at an IBM hackathon.</p>
-          <div class="chips">
-            <span>React + Vite</span><span>Vercel</span><span>OpenRouter</span><span>face-api.js</span><span>Web Speech</span>
-          </div>
-          <div class="project-links">
-            <a href="https://mock-mentor-taupe.vercel.app/" target="_blank" rel="noopener noreferrer" class="cursor-hover"><i class="ri-global-line"></i> live</a>
-            <a href="https://github.com/subasmk/MOCK-MENTOR" target="_blank" rel="noopener noreferrer" class="cursor-hover"><i class="ri-github-fill"></i> source</a>
-          </div>
-        </div>
-      </article>
-    </div>
-
-    <div class="more-repos reveal">
-      <a href="https://github.com/subasmk?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn btn-ghost cursor-hover">MORE ON GITHUB <i class="ri-arrow-right-up-line"></i></a>
-    </div>
-  </section>
-
-  <!-- ============ SKILLS ============ -->
-  <section id="skills" class="section">
-    <div class="section-head reveal">
-      <span class="tag">03 // SKILLS</span>
-      <h2>the <em>arsenal</em></h2>
-    </div>
-    <div class="skill-grid">
-      <div class="skill-card reveal cursor-hover">
-        <i class="ri-robot-2-line"></i>
-        <h4>GenAI &amp; LLMs</h4>
-        <div class="chips"><span>Prompt Engineering</span><span>OpenRouter</span><span>Gemini</span><span>BYOK patterns</span></div>
-      </div>
-      <div class="skill-card reveal cursor-hover">
-        <i class="ri-code-s-slash-line"></i>
-        <h4>Full Stack</h4>
-        <div class="chips"><span>React</span><span>Next.js</span><span>Node.js</span><span>Django</span><span>Flask</span><span>Tailwind</span></div>
-      </div>
-      <div class="skill-card reveal cursor-hover">
-        <i class="ri-smartphone-line"></i>
-        <h4>App Dev</h4>
-        <div class="chips"><span>Android</span><span>Supabase</span><span>MySQL</span><span>Widgets</span><span>Play-ready APKs</span></div>
-      </div>
-      <div class="skill-card reveal cursor-hover">
-        <i class="ri-terminal-box-line"></i>
-        <h4>Languages</h4>
-        <div class="chips"><span>Python</span><span>Java</span><span>JavaScript</span><span>C++</span><span>PHP</span></div>
-      </div>
-      <div class="skill-card reveal cursor-hover">
-        <i class="ri-shield-keyhole-line"></i>
-        <h4>Cybersecurity</h4>
-        <div class="chips"><span>Learning</span><span>Web Security</span><span>Prompt Injection</span></div>
-      </div>
-      <div class="skill-card reveal cursor-hover">
-        <i class="ri-tools-line"></i>
-        <h4>Tools &amp; Cloud</h4>
-        <div class="chips"><span>Git</span><span>GitHub</span><span>Vercel</span><span>AWS</span><span>CI/CD</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ JOURNEY ============ -->
-  <section id="journey" class="section section-alt">
-    <div class="section-head reveal">
-      <span class="tag">04 // JOURNEY</span>
-      <h2>2026 <em>quest log</em></h2>
-    </div>
-    <div class="timeline">
-      <div class="tl-item reveal">
-        <div class="tl-dot"></div>
-        <div class="tl-card">
-          <span class="tl-date">SEP 2026</span>
-          <h4>IBM Hackathon - built &amp; submitted in one day</h4>
-          <p>MockMentor went from idea to live AI interview platform within the hackathon window, with a teammate, using AI-assisted dev tools.</p>
+    <div class="max-w-[1400px] mx-auto px-4 relative z-10">
+      <div class="flex flex-col md:flex-row justify-between items-end mb-12 border-b-4 border-white pb-4">
+        <h2 class="text-6xl md:text-8xl font-black uppercase text-white tracking-tighter">TECH<span
+            class="text-neo-green">_STACK</span></h2>
+        <div class="flex items-center gap-2 mb-2 md:mb-4">
+          <div class="w-3 h-3 bg-red-500 rounded-full animate-pulse hero-orbit"></div>
+          <p class="font-mono text-neo-green text-sm font-bold">/// SYSTEM_OPTIMIZED</p>
         </div>
       </div>
-      <div class="tl-item reveal">
-        <div class="tl-dot"></div>
-        <div class="tl-card">
-          <span class="tl-date">SEP 2026</span>
-          <h4>TrackMe v3.0 - shipped an AI System Assistant</h4>
-          <p>Three major releases of my own Android app. v3.0 added a free-to-run AI assistant with bring-your-own-key design.</p>
+      <div class="flex flex-wrap justify-center md:justify-start">
+        <!-- FRONTEND -->
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-white transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ FRONTEND</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">REACT</div>
         </div>
-      </div>
-      <div class="tl-item reveal">
-        <div class="tl-dot"></div>
-        <div class="tl-card">
-          <span class="tl-date">2026</span>
-          <h4>Smart India Hackathon participant</h4>
-          <p>Designed and pitched a digital-companion concept for SIH 2026 - problem framing, decks and product thinking.</p>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-yellow transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ FRAMEWORK</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">NEXT.JS</div>
         </div>
-      </div>
-      <div class="tl-item reveal">
-        <div class="tl-dot"></div>
-        <div class="tl-card">
-          <span class="tl-date">ONGOING</span>
-          <h4>Building in public</h4>
-          <p>Documenting the whole journey - wins, bugs and lessons - on LinkedIn and GitHub. LeetCode on the side.</p>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-blue transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ LANGUAGE</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">Python</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-green transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ BACKEND</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">NODE.JS</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-pink transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ STYLING</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">TAILWIND</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-purple transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ DATABASE</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">MySQL</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-orange transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ CORE</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">HTML5</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-white transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ TOOLS</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">GIT</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-white transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ CLOUD</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">AWS</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-blue transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ OPS</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">GitHub</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-orange transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ LANGUAGE</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">JAVA</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-yellow transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ FRAMEWORK</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">Django</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-pink transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ LANGUAGE</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">PHP</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-white transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ STYLE</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">CSS</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-green transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ MICRO</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">FLASK</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-purple transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ LANGUAGE</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">C++</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ CONTACT ============ -->
-  <section id="contact" class="section">
-    <div class="contact-card reveal">
-      <div class="contact-left">
-        <span class="tag">05 // CONTACT</span>
-        <h2>let's build<br>something <em>real</em></h2>
-        <p>Internships, collabs, hackathon teams, or just tech talk - my inbox is open.</p>
-        <div class="contact-rows">
-          <a href="mailto:mksubash2809@gmail.com" class="contact-row cursor-hover"><i class="ri-mail-line"></i> mksubash2809@gmail.com</a>
-          <div class="contact-row"><i class="ri-map-pin-line"></i> India · Remote-friendly</div>
-        </div>
-        <div class="socials">
-          <a href="https://github.com/subasmk" target="_blank" rel="noopener noreferrer" class="cursor-hover" aria-label="GitHub"><i class="ri-github-fill"></i></a>
-          <a href="https://www.linkedin.com/in/subasmk/" target="_blank" rel="noopener noreferrer" class="cursor-hover" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
-          <a href="https://leetcode.com/u/subas_mk/" target="_blank" rel="noopener noreferrer" class="cursor-hover" aria-label="LeetCode"><i class="ri-code-fill"></i></a>
-          <a href="https://www.instagram.com/subasmk" target="_blank" rel="noopener noreferrer" class="cursor-hover" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
+  <!-- Experience Section (fresher placeholder) -->
+  <section id="experience" class="py-24 px-4 max-w-7xl mx-auto">
+    <h2 class="text-5xl md:text-8xl font-black uppercase mb-12 tracking-tighter text-center">Experience<span
+        class="text-neo-red">_Log</span></h2>
+    <div class="relative border-l-4 border-black ml-4 md:ml-10 space-y-12">
+      <div class="reveal relative pl-8 md:pl-16">
+        <div class="absolute -left-[14px] top-2 w-6 h-6 bg-neo-yellow border-4 border-black"></div>
+        <div class="bg-white border-4 border-black p-8 shadow-hard hover:shadow-hard-xl transition-all text-center">
+          <i class="ri-database-2-line text-6xl text-neo-green mb-4 block"></i>
+          <h3 class="text-2xl font-black uppercase mb-2">No Experience Logs Yet</h3>
+          <p class="font-mono text-gray-600">I'm a fresher, eager to learn and grow. Future milestones will be recorded
+            here.<br>Ready to take on challenges and build real-world projects.</p>
         </div>
       </div>
-      <form class="contact-form" id="contactForm">
-        <label>NAME<input type="text" id="cf-name" placeholder="your name" required></label>
-        <label>EMAIL<input type="email" id="cf-email" placeholder="you@company.com" required></label>
-        <label>MESSAGE<textarea id="cf-msg" rows="4" placeholder="what are we building?" required></textarea></label>
-        <button type="submit" class="btn btn-primary cursor-hover">SEND VIA EMAIL <i class="ri-send-plane-line"></i></button>
-        <p class="form-note">opens your mail app, nothing is stored</p>
-      </form>
     </div>
   </section>
 
-  <!-- ============ FOOTER ============ -->
-  <footer>
-    <div class="footer-inner">
-      <a href="#top" class="logo cursor-hover">SUBASH<span>.MK</span></a>
-      <p class="footer-line">designed &amp; built by Subash Mk · © 2026</p>
-      <p class="footer-mono">// ship &gt; perfect</p>
+  <!-- Projects Section (REAL projects added) -->
+  <section id="projects" class="py-24 bg-neo-yellow border-t-4 border-black px-4 overflow-hidden">
+    <div class="max-w-7xl mx-auto">
+      <h2
+        class="text-6xl md:text-9xl font-black mb-16 uppercase tracking-tighter text-white drop-shadow-[4px_4px_0_rgba(0,0,0,1)] text-stroke-black"
+        style="-webkit-text-stroke: 3px black;">Selected Works</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <!-- Project: TrackMe App -->
+        <article class="reveal group bg-white border-4 border-black p-4 shadow-hard">
+          <div class="bg-black border-2 border-black aspect-video relative overflow-hidden mb-6">
+            <img src="Assets/images/trackme.png" alt="TrackMe App" loading="lazy"
+              onerror="this.src='Assets/images/img.jpg'"
+              class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+          </div>
+          <div class="flex justify-between items-start">
+            <div>
+              <h3 class="text-4xl font-black uppercase mb-2 group-hover:text-neo-red transition-colors glitch-hover">
+                TrackMe App</h3>
+              <p class="font-mono text-sm mb-4 max-w-xs">A tracking application for monitoring and managing real-time
+                activity and stats.</p>
+              <div class="flex gap-2 font-mono text-xs font-bold flex-wrap">
+                <span class="bg-neo-black text-white px-2 py-1">React</span>
+                <span class="bg-neo-black text-white px-2 py-1">Node.js</span>
+                <span class="bg-neo-black text-white px-2 py-1">Tailwind</span>
+              </div>
+            </div>
+            <a href="https://github.com/subasmk/trackme"
+              class="w-12 h-12 border-2 border-black bg-neo-green flex items-center justify-center hover:bg-black hover:text-white transition-all shadow-hard-sm cursor-hover">
+              <i class="ri-arrow-right-up-line text-2xl"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+      <div class="text-center mt-12"><a href="https://github.com/subasmk?tab=repositories"
+          class="inline-block bg-neo-black text-white px-12 py-5 font-bold font-mono text-xl hover:bg-neo-white hover:text-black border-4 border-black transition-all shadow-hard hover:shadow-none cursor-hover">VIEW
+          ALL REPOS ON GITHUB</a></div>
     </div>
-    <div class="footer-bg" aria-hidden="true">BUILD</div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-24 px-4 max-w-5xl mx-auto">
+    <div class="bg-white border-4 border-black shadow-hard-xl p-8 md:p-12 relative reveal mt-12">
+      <div class="absolute -top-10 -left-6 bg-neo-yellow border-4 border-black px-6 py-2 shadow-hard rotate-[-5deg]">
+        <span class="font-black text-2xl">START A PROJECT</span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div>
+          <h2 class="text-6xl font-black uppercase mb-6 leading-[0.85]">Let's<br>Talk<br>Code.</h2>
+          <p class="font-mono text-lg mb-8 text-gray-600">I am available for freelance work, internships, and
+            entry-level full-time opportunities.</p>
+          <div class="space-y-4">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-neo-black text-white flex items-center justify-center border-2 border-black"><i
+                  class="ri-mail-line text-xl"></i></div><a href="mailto:mksubash2809@gmail.com"
+                class="text-xl font-bold hover:bg-neo-blue cursor-hover">mksubash2809@gmail.com</a>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-neo-black text-white flex items-center justify-center border-2 border-black"><i
+                  class="ri-map-pin-line text-xl"></i></div><span class="text-xl font-bold">Remote / Earth</span>
+            </div>
+          </div>
+        </div>
+        <form id="contact-form" class="space-y-6 bg-gray-50 p-6 border-2 border-black"
+          onsubmit="event.preventDefault(); this.innerHTML='<div class=\'py-20 text-center\'><i class=\'ri-checkbox-circle-fill text-6xl text-neo-green mb-4 block\'></i><h3 class=\'text-2xl font-black uppercase\'>Transmission Received</h3><p class=\'font-mono text-sm mt-2\'>System response initialized. I will reach out shortly.</p></div>'">
+          <div class="flex flex-col"><label class="font-mono font-bold mb-1 uppercase text-xs">Identity</label><input
+              type="text" placeholder="NAME / COMPANY"
+              class="bg-white border-2 border-black p-3 font-bold focus:outline-none focus:bg-neo-yellow focus:shadow-hard-sm transition-all cursor-hover">
+          </div>
+          <div class="flex flex-col"><label class="font-mono font-bold mb-1 uppercase text-xs">Coordinates</label><input
+              type="email" placeholder="EMAIL ADDRESS"
+              class="bg-white border-2 border-black p-3 font-bold focus:outline-none focus:bg-neo-yellow focus:shadow-hard-sm transition-all cursor-hover">
+          </div>
+          <div class="flex flex-col"><label
+              class="font-mono font-bold mb-1 uppercase text-xs">Transmission</label><textarea rows="4"
+              placeholder="PROJECT DETAILS..."
+              class="bg-white border-2 border-black p-3 font-bold focus:outline-none focus:bg-neo-yellow focus:shadow-hard-sm transition-all resize-none cursor-hover"></textarea>
+          </div>
+          <button type="submit"
+            class="w-full bg-neo-blue text-white font-black text-xl py-4 border-2 border-black shadow-hard neo-button hover:bg-neo-black hover:translate-y-1 hover:shadow-none transition-all cursor-hover">TRANSMIT
+            DATA</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer with improved copyright -->
+  <footer class="bg-black text-white py-16 px-4 border-t-8 border-neo-green font-mono relative overflow-hidden">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 relative z-10">
+      <div class="col-span-1 md:col-span-2">
+        <h2 class="text-4xl font-black mb-6">SUBASH M.</h2>
+        <p class="text-gray-400 max-w-sm">AI & DS student, aspiring developer. Designing for the future with raw
+          aesthetics.</p>
+      </div>
+      <div>
+        <h3 class="font-bold text-neo-green mb-4 border-b border-gray-700 pb-2">SITEMAP</h3>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="#"
+              class="hover:text-white hover:underline decoration-neo-pink decoration-2 cursor-hover">Home</a></li>
+          <li><a href="#projects"
+              class="hover:text-white hover:underline decoration-neo-pink decoration-2 cursor-hover">Works</a></li>
+          <li><a href="#about"
+              class="hover:text-white hover:underline decoration-neo-pink decoration-2 cursor-hover">About</a></li>
+          <li><a href="#contact"
+              class="hover:text-white hover:underline decoration-neo-pink decoration-2 cursor-hover">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold text-neo-green mb-4 border-b border-gray-700 pb-2">SOCIALS</h3>
+        <div class="flex gap-4"><a href="https://leetcode.com/u/subasmk/" aria-label="LeetCode profile" target="_blank" rel="noopener noreferrer"
+            class="text-2xl hover:text-neo-blue transition-colors cursor-hover"><i class="ri-code-fill"></i></a><a
+            href="https://www.instagram.com/ofc.not_arham"
+            class="text-2xl hover:text-neo-pink transition-colors cursor-hover"><i class="ri-instagram-fill"></i></a><a
+            href="https://github.com/subasmk" class="text-2xl hover:text-neo-yellow transition-colors cursor-hover"><i
+              class="ri-github-fill"></i></a><a href="https://www.linkedin.com/in/subasmk/"
+            class="text-2xl hover:text-neo-purple transition-colors cursor-hover"><i class="ri-linkedin-fill"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-16 pt-8 border-t border-gray-800 text-gray-500 text-sm">
+      <p>© 2026 SUBASH M • Built with HTML, CSS & JavaScript.</p>
+    </div>
+    <div
+      class="absolute bottom-0 left-0 w-full text-[20vw] font-black text-white opacity-[0.03] leading-none select-none pointer-events-none text-center">
+      BRUTAL</div>
   </footer>
 
-  <button id="scrollTopBtn" aria-label="back to top"><i class="ri-arrow-up-line"></i></button>
+  <!-- Scroll To Top Button -->
+  <button id="scrollTopBtn"
+    class="fixed bottom-6 right-6 bg-neo-yellow border-4 border-black p-4 shadow-hard hidden z-50 hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all cursor-pointer">↑</button>
 
   <script src="script.js" defer></script>
 </body>
-</html>
+
+            </html>
