@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Subash M | AI & DS Student and aspiring Full Stack Developer. Building bold AI-powered digital experiences with clean code and brutalist aesthetics.">
+  <meta name="keywords"
+    content="Subash M, AI, Data Science, Full Stack Developer, NeoBrutalist, Portfolio, Web Development, React, Python, Flask">
+  <meta name="author" content="Subash M">
+  <link rel="canonical" href="https://subasmk.vercel.app/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://subasmk.vercel.app/">
+  <meta property="og:title" content="SUBASH M | AI & DS Student">
+  <meta property="og:description"
+    content="AI & Data Science student and aspiring Full Stack Developer. Building bold AI-powered digital experiences.">
+  <meta property="og:image" content="Assets/images/phisgaurd.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://subasmk.vercel.app/">
+  <meta property="twitter:title" content="SUBASH M | AI & DS Student">
+  <meta property="twitter:description"
+    content="AI & Data Science student and aspiring Full Stack Developer. Building the future with raw aesthetics.">
+  <meta property="twitter:image" content="Assets/images/phisgaurd.png">
+
+  <title>SUBASH M | AI & DS Student</title>
+
+  <!-- Theme & Performance -->
+  <meta name="theme-color" content="#FFFDF5">
+  <meta name="color-scheme" content="only light">
+  <link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&family=Space+Grotesk:wght@800&display=swap"
+    as="style">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Subash M",
+      "url": "https://subasmk.vercel.app/",
+      "jobTitle": "AI & DS Student / Aspiring Developer",
+      "image": "Assets/images/logo.png",
+      "knowsAbout": ["React", "Python", "Java", "Node.js", "Django", "AWS", "CSS", "Flask", "UI/UX Design", "NeoBrutalist Design"],
+      "sameAs": [
+        "https://github.com/subasmk",
+        "https://leetcode.com/u/subas_mk/"
+      ],
+      "description": "AI & Data Science student and aspiring Full Stack Developer. Passionate about building bold digital experiences."
+    }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'neo-yellow': '#FBFF48',
+            'neo-pink': '#FF70A6',
+            'neo-blue': '#3B82F6',
+            'neo-green': '#33FF57',
+            'neo-purple': '#A855F7',
+            'neo-orange': '#FF9F1C',
+            'neo-red': '#FF2A2A',
+            'neo-white': '#FFFDF5',
+            'neo-black': '#121212',
+          },
+          fontFamily: {
+            'display': ['"Space Grotesk"', 'sans-serif'],
+            'mono': ['"JetBrains Mono"', 'monospace'],
+          },
+          boxShadow: {
+            'hard': '4px 4px 0px 0px #000',
+            'hard-sm': '2px 2px 0px 0px #000',
+            'hard-lg': '8px 8px 0px 0px #000',
+            'hard-xl': '12px 12px 0px 0px #000',
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="icon" href="Assets/images/title_icon.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=Space+Grotesk:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20260930-cream">
+</head>
+
+<body class="text-neo-black font-display antialiased selection:bg-neo-black selection:text-neo-yellow">
+
+  <div id="cursor" class="w-6 h-6 bg-white rounded-full border-2 border-black hidden lg:block"></div>
+
+  <div class="fixed top-0 left-0 h-2 bg-neo-green z-[60] border-b-2 border-black" id="progressBar" style="width: 0%">
+  </div>
+
+  <!-- Improved Navbar with blur effect -->
+  <nav
+    class="fixed top-0 w-full z-50 px-4 py-4 backdrop-blur-md bg-white/70 border-b border-black/10 pointer-events-none">
+    <div class="max-w-7xl mx-auto flex justify-between items-center pointer-events-auto">
+      <a href="#"
+        class="bg-neo-white border-2 border-black px-4 py-1 text-2xl font-black shadow-hard hover:bg-neo-yellow transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-none cursor-hover">
+        SUBASH.exe
+      </a>
+
+      <div class="hidden md:flex gap-4 bg-white/90 backdrop-blur-sm border-2 border-black p-2 shadow-hard">
+        <a href="#about"
+          class="px-3 py-1 font-mono font-bold text-sm hover:bg-black hover:text-white transition-colors cursor-hover">/ABOUT</a>
+        <a href="#skills"
+          class="px-3 py-1 font-mono font-bold text-sm hover:bg-black hover:text-white transition-colors cursor-hover">/SKILLS</a>
+        <a href="#experience"
+          class="px-3 py-1 font-mono font-bold text-sm hover:bg-black hover:text-white transition-colors cursor-hover">/LOGS</a>
+        <a href="#projects"
+          class="px-3 py-1 font-mono font-bold text-sm hover:bg-black hover:text-white transition-colors cursor-hover">/WORK</a>
+        <a href="certificates.html" class="px-3 py-1 font-mono font-bold text-sm hover:bg-black hover:text-white transition-colors">CERTIFICATES</a>
+        <a href="playground.html" class="px-3 py-1 font-mono font-bold text-sm hover:bg-black hover:text-white transition-colors">PLAYGROUND</a>
+        <a href="#contact"
+          class="px-3 py-1 font-mono font-bold text-sm bg-neo-yellow border border-black hover:bg-neo-pink transition-colors cursor-hover">HIRE
+          ME</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section
+    class="min-h-screen flex flex-col justify-center items-center px-4 pt-20 relative overflow-hidden border-b-4 border-black">
+    <div
+      class="absolute top-28 left-5 w-10 h-10 lg:top-1/3 lg:left-[10%] lg:w-16 lg:h-16 bg-neo-blue border-4 border-black shadow-hard rotate-12 hero-float">
+    </div>
+    <div
+      class="absolute bottom-12 right-4 w-10 h-10 lg:bottom-1/3 lg:right-[10%] lg:w-24 lg:h-24 bg-neo-pink rounded-full border-4 border-black shadow-hard hero-orbit">
+    </div>
+    <div
+      class="absolute top-[19rem] left-2 w-7 h-7 lg:top-24 lg:right-1/3 lg:left-auto lg:w-10 lg:h-10 bg-neo-green border-4 border-black rounded-full shadow-hard hero-orbit">
+    </div>
+    <div
+      class="absolute bottom-[4.2rem] left-4 w-6 h-6 lg:bottom-24 lg:left-1/4 lg:w-9 lg:h-9 bg-neo-orange border-4 border-black shadow-hard rotate-45 hero-float">
+    </div>
+    <div
+      class="absolute top-24 right-1 lg:top-20 lg:right-20 text-[24vw] lg:text-9xl leading-none opacity-10 lg:opacity-5 font-black select-none pointer-events-none rotate-[-4deg]">CODE</div>
+
+    <div class="relative z-10 text-center max-w-5xl">
+      <div class="inline-block bg-neo-white border-2 border-black px-4 py-1 mb-6 shadow-hard rotate-[-2deg] reveal">
+        <span class="font-mono font-bold text-neo-green bg-black px-2 mr-2">●</span>
+        <span class="font-mono font-bold">SYSTEM STATUS: ONLINE</span>
+      </div>
+
+      <h1
+        class="text-[17vw] md:text-[10vw] leading-[0.8] font-black uppercase tracking-tighter mb-6 reveal mix-blend-darken">
+        AI & DS<br>
+        <span class="text-white text-stroke-black" style="-webkit-text-stroke: 3px black;">STUDENT</span>
+      </h1>
+
+      <!-- Improved Hero Subtitle -->
+      <p
+        class="relative font-mono text-lg md:text-2xl max-w-2xl mx-auto mb-10 bg-neo-yellow border-2 border-black p-4 shadow-hard reveal rotate-1">
+        <span
+          class="absolute -top-3 -left-2 bg-neo-pink border-2 border-black px-2 py-0.5 font-mono text-xs font-bold shadow-hard-sm rotate-[-8deg] hero-float lg:hidden select-none">&lt;AI/&gt;</span>
+        Building bold AI-powered digital experiences with clean code and brutalist aesthetics.<br>
+        <b>React • Python • Java • Node</b>
+      </p>
+
+      <div class="flex flex-col md:flex-row justify-center gap-6 reveal">
+        <a href="#projects"
+          class="bg-black text-white border-2 border-black px-10 py-5 text-xl font-bold shadow-hard hover:bg-neo-green hover:text-black hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all cursor-hover">
+          VIEW DATABASE
+        </a>
+        <!-- Improved Resume Button with target="_blank" and rel -->
+        <a href="4-Subash_Mk_Resume-c8ab9424.pdf" download="Subash-Mk-Resume.pdf"
+          class="relative bg-neo-white text-black border-2 border-black px-10 py-5 text-xl font-bold shadow-hard hover:bg-neo-pink hover:text-black hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all cursor-hover flex items-center justify-center gap-2">
+          <span
+            class="absolute -top-2 -right-2 bg-neo-green border-2 border-black px-1.5 py-0.5 font-mono text-[10px] font-bold rotate-6 lg:hidden select-none">{ }</span>
+          <i class="ri-download-line"></i> DOWNLOAD CV
+        </a>
+      </div>
+    </div>
+
+<div class="home-portals"><a href="certificates.html" class="neo-link">CERTIFICATES <span>↗</span></a><a href="playground.html" class="neo-link">PLAYGROUND <span>↗</span></a></div>
+    <a href="#about"
+      class="absolute bottom-5 left-1/2 -translate-x-1/2 bg-neo-white border-2 border-black px-3 py-1 font-mono font-bold text-xs shadow-hard-sm animate-bounce select-none cursor-hover lg:hidden">SCROLL
+      ↓</a>
+  </section>
+
+  <!-- Marquee Bar -->
+  <div class="border-b-4 border-black bg-neo-blue py-3 relative z-20">
+    <div class="marquee-container font-mono font-bold text-2xl text-white">
+      <div class="marquee-content">
+        /// OPEN FOR WORK /// FULL STACK DEVELOPMENT /// AI & DATA SCIENCE /// ACCESSIBLE /// FAST /// SECURE /// OPEN
+        FOR WORK /// FULL STACK DEVELOPMENT ///
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section (updated: AI & DS student with lazy loading) -->
+  <section id="about" class="py-24 px-4 max-w-7xl mx-auto border-x-4 border-black bg-white my-12 shadow-hard-lg">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+      <div class="md:col-span-4 reveal">
+        <div class="aspect-square bg-gray-200 border-4 border-black relative shadow-hard overflow-hidden group">
+          <img src="Assets/images/img.jpg" alt="Subash M" loading="lazy" onerror="this.src='Assets/images/fallback.jpg'"
+            class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
+          <span
+            class="absolute top-2 left-2 bg-neo-red text-white px-2 font-mono text-xs border border-black z-10">AVATAR.JPG</span>
+        </div>
+      </div>
+      <div class="md:col-span-8 flex flex-col justify-center reveal">
+        <h2 class="text-6xl font-black uppercase mb-6">Who am I?</h2>
+        <p class="font-mono text-xl leading-relaxed mb-6">
+          I am Subash M — a <span class="bg-neo-yellow px-1 border border-black">B.Tech AI & Data Science student</span> at VSB College of Engineering Technical Campus (Class of 2029), with a 7.15 CGPA. I turn complex problems into clean, bold digital solutions.
+        </p>
+        <p class="font-mono text-lg mb-8 text-gray-600 border-l-4 border-neo-purple pl-4">
+          > Passionate about AI, Machine Learning, and Full Stack Development.<br>
+          > Always learning, always building, always pushing boundaries.<br>
+          > Currently exploring advanced web architectures, cloud computing, and cybersecurity.
+        </p>
+        <div class="flex flex-wrap gap-3 mb-6">
+          <span class="bg-neo-yellow px-3 py-2 border-2 border-black shadow-hard-sm font-mono text-sm">CGPA: 7.15</span>
+          <span class="bg-neo-pink px-3 py-2 border-2 border-black shadow-hard-sm font-mono text-sm">Pantech AI · Full Stack</span>
+          <span class="bg-neo-blue text-white px-3 py-2 border-2 border-black shadow-hard-sm font-mono text-sm">AWS · HCL GUVI</span>
+        </div>
+        <div class="flex gap-4">
+          <div class="bg-neo-black text-white px-4 py-2 font-mono text-sm border-2 border-transparent">
+            📍 COIMBATORE, TAMIL NADU
+          </div>
+          <div class="bg-neo-green text-black px-4 py-2 font-mono text-sm border-2 border-black">
+            🟢 STATUS: AVAILABLE FOR WORK
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section (improved category labels) -->
+  <section id="skills" class="py-20 bg-neo-black text-neo-white border-y-4 border-black relative overflow-hidden">
+    <div class="absolute inset-0 opacity-20"
+      style="background-image: linear-gradient(#333 1px, transparent 1px), linear-gradient(90deg, #333 1px, transparent 1px); background-size: 40px 40px;">
+    </div>
+    <div class="max-w-[1400px] mx-auto px-4 relative z-10">
+      <div class="flex flex-col md:flex-row justify-between items-end mb-12 border-b-4 border-white pb-4">
+        <h2 class="text-6xl md:text-8xl font-black uppercase text-white tracking-tighter">TECH<span
+            class="text-neo-green">_STACK</span></h2>
+        <div class="flex items-center gap-2 mb-2 md:mb-4">
+          <div class="w-3 h-3 bg-red-500 rounded-full animate-pulse hero-orbit"></div>
+          <p class="font-mono text-neo-green text-sm font-bold">/// SYSTEM_OPTIMIZED</p>
+        </div>
+      </div>
+      <div class="flex flex-wrap justify-center md:justify-start">
+        <!-- FRONTEND -->
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-white transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ FRONTEND</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">REACT</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-yellow transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ FRAMEWORK</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">NEXT.JS</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-blue transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ LANGUAGE</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">Python</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-green transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ BACKEND</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">NODE.JS</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-pink transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ STYLING</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">TAILWIND</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-purple transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ DATABASE</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">MySQL</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-orange transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ CORE</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">HTML5</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-white transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ TOOLS</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">GIT</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-white transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ CLOUD</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">AWS</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-blue transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ OPS</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">GitHub</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-orange transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ LANGUAGE</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">JAVA</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-yellow transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ FRAMEWORK</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">Django</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-pink transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ LANGUAGE</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">PHP</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-white transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ STYLE</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">CSS</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-green transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ MICRO</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">FLASK</div>
+        </div>
+        <div
+          class="group w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 xl:w-[12.5%] h-24 border-r-2 border-b-2 border-white/20 bg-neo-black hover:bg-neo-purple transition-all duration-0 hover:z-10 relative cursor-hover flex flex-col items-center justify-center p-2">
+          <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ LANGUAGE</div>
+          <div class="text-white group-hover:text-black font-black font-display text-xl uppercase">C++</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section id="leetcode" class="lc-section"><div class="showcase-shell"><p class="kicker">/ PROBLEM SOLVING</p><div class="lc-layout"><div><h2 class="show-title">LEET<span>CODE</span></h2><p class="mono-copy">My coding practice, one problem at a time.</p><div class="handle-chip">&lt;/&gt; subas_mk</div></div><div class="neo-card lc-panel"><p class="kicker">PROFILE.EXE</p><pre>while (learning) {
+  practice();
+  repeat();
+}</pre><a class="neo-link dark-link" href="https://leetcode.com/u/subas_mk/" target="_blank" rel="noopener noreferrer">OPEN LEETCODE ↗</a><a class="plain-link" href="https://github.com/subasmk/leetcode" target="_blank" rel="noopener noreferrer">Explore my practice repository ↗</a></div></div></div></section>
+  <!-- Experience Section (fresher placeholder) -->
+  <section id="experience" class="py-24 px-4 max-w-7xl mx-auto">
+    <h2 class="text-5xl md:text-8xl font-black uppercase mb-12 tracking-tighter text-center">Experience<span
+        class="text-neo-red">_Log</span></h2>
+    <div class="relative border-l-4 border-black ml-4 md:ml-10 space-y-12">
+      <div class="reveal relative pl-8 md:pl-16">
+        <div class="absolute -left-[14px] top-2 w-6 h-6 bg-neo-yellow border-4 border-black"></div>
+        <div class="bg-white border-4 border-black p-8 shadow-hard hover:shadow-hard-xl transition-all text-center">
+          <i class="ri-database-2-line text-6xl text-neo-green mb-4 block"></i>
+          <h3 class="text-2xl font-black uppercase mb-2">No Experience Logs Yet</h3>
+          <p class="font-mono text-gray-600">I'm a fresher, eager to learn and grow. Future milestones will be recorded
+            here.<br>Ready to take on challenges and build real-world projects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section (REAL projects added) -->
+  <section id="projects" class="py-24 bg-neo-yellow border-t-4 border-black px-4 overflow-hidden">
+    <div class="max-w-7xl mx-auto">
+      <h2
+        class="text-6xl md:text-9xl font-black mb-16 uppercase tracking-tighter text-white drop-shadow-[4px_4px_0_rgba(0,0,0,1)] text-stroke-black"
+        style="-webkit-text-stroke: 3px black;">Selected Works</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <!-- Project: TrackMe App -->
+        <article class="reveal group bg-white border-4 border-black p-4 shadow-hard">
+          <div class="bg-black border-2 border-black aspect-video relative overflow-hidden mb-6">
+            <img src="Assets/images/trackme.png" alt="TrackMe App" loading="lazy"
+              onerror="this.src='Assets/images/img.jpg'"
+              class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+          </div>
+          <div class="flex justify-between items-start">
+            <div>
+              <h3 class="text-4xl font-black uppercase mb-2 group-hover:text-neo-red transition-colors glitch-hover">
+                TrackMe App</h3>
+              <p class="font-mono text-sm mb-4 max-w-xs">A tracking application for monitoring and managing real-time
+                activity and stats.</p>
+              <div class="flex gap-2 font-mono text-xs font-bold flex-wrap">
+                <span class="bg-neo-black text-white px-2 py-1">React</span>
+                <span class="bg-neo-black text-white px-2 py-1">Node.js</span>
+                <span class="bg-neo-black text-white px-2 py-1">Tailwind</span>
+              </div>
+            </div>
+            <a href="https://github.com/subasmk/trackme"
+              class="w-12 h-12 border-2 border-black bg-neo-green flex items-center justify-center hover:bg-black hover:text-white transition-all shadow-hard-sm cursor-hover">
+              <i class="ri-arrow-right-up-line text-2xl"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+      <div class="text-center mt-12"><a href="https://github.com/subasmk?tab=repositories"
+          class="inline-block bg-neo-black text-white px-12 py-5 font-bold font-mono text-xl hover:bg-neo-white hover:text-black border-4 border-black transition-all shadow-hard hover:shadow-none cursor-hover">VIEW
+          ALL REPOS ON GITHUB</a></div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-24 px-4 max-w-5xl mx-auto">
+    <div class="bg-white border-4 border-black shadow-hard-xl p-8 md:p-12 relative reveal mt-12">
+      <div class="absolute -top-10 -left-6 bg-neo-yellow border-4 border-black px-6 py-2 shadow-hard rotate-[-5deg]">
+        <span class="font-black text-2xl">START A PROJECT</span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div>
+          <h2 class="text-6xl font-black uppercase mb-6 leading-[0.85]">Let's<br>Talk<br>Code.</h2>
+          <p class="font-mono text-lg mb-8 text-gray-600">I am available for freelance work, internships, and
+            entry-level full-time opportunities.</p>
+          <div class="space-y-4">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-neo-black text-white flex items-center justify-center border-2 border-black"><i
+                  class="ri-mail-line text-xl"></i></div><a href="mailto:mksubash2809@gmail.com"
+                class="text-xl font-bold hover:bg-neo-blue cursor-hover">mksubash2809@gmail.com</a>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-neo-black text-white flex items-center justify-center border-2 border-black"><i
+                  class="ri-map-pin-line text-xl"></i></div><span class="text-xl font-bold">Remote / Earth</span>
+            </div>
+          </div>
+        </div>
+        <form id="contact-form" class="space-y-6 bg-gray-50 p-6 border-2 border-black"
+          onsubmit="event.preventDefault(); this.innerHTML='<div class=\'py-20 text-center\'><i class=\'ri-checkbox-circle-fill text-6xl text-neo-green mb-4 block\'></i><h3 class=\'text-2xl font-black uppercase\'>Transmission Received</h3><p class=\'font-mono text-sm mt-2\'>System response initialized. I will reach out shortly.</p></div>'">
+          <div class="flex flex-col"><label class="font-mono font-bold mb-1 uppercase text-xs">Identity</label><input
+              type="text" placeholder="NAME / COMPANY"
+              class="bg-white border-2 border-black p-3 font-bold focus:outline-none focus:bg-neo-yellow focus:shadow-hard-sm transition-all cursor-hover">
+          </div>
+          <div class="flex flex-col"><label class="font-mono font-bold mb-1 uppercase text-xs">Coordinates</label><input
+              type="email" placeholder="EMAIL ADDRESS"
+              class="bg-white border-2 border-black p-3 font-bold focus:outline-none focus:bg-neo-yellow focus:shadow-hard-sm transition-all cursor-hover">
+          </div>
+          <div class="flex flex-col"><label
+              class="font-mono font-bold mb-1 uppercase text-xs">Transmission</label><textarea rows="4"
+              placeholder="PROJECT DETAILS..."
+              class="bg-white border-2 border-black p-3 font-bold focus:outline-none focus:bg-neo-yellow focus:shadow-hard-sm transition-all resize-none cursor-hover"></textarea>
+          </div>
+          <button type="submit"
+            class="w-full bg-neo-blue text-white font-black text-xl py-4 border-2 border-black shadow-hard neo-button hover:bg-neo-black hover:translate-y-1 hover:shadow-none transition-all cursor-hover">TRANSMIT
+            DATA</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer with improved copyright -->
+  <footer class="bg-black text-white py-16 px-4 border-t-8 border-neo-green font-mono relative overflow-hidden">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 relative z-10">
+      <div class="col-span-1 md:col-span-2">
+        <h2 class="text-4xl font-black mb-6">SUBASH M.</h2>
+        <p class="text-gray-400 max-w-sm">AI & DS student, aspiring developer. Designing for the future with raw
+          aesthetics.</p>
+      </div>
+      <div>
+        <h3 class="font-bold text-neo-green mb-4 border-b border-gray-700 pb-2">SITEMAP</h3>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="#"
+              class="hover:text-white hover:underline decoration-neo-pink decoration-2 cursor-hover">Home</a></li>
+          <li><a href="#projects"
+              class="hover:text-white hover:underline decoration-neo-pink decoration-2 cursor-hover">Works</a></li>
+          <li><a href="#about"
+              class="hover:text-white hover:underline decoration-neo-pink decoration-2 cursor-hover">About</a></li>
+          <li><a href="#contact"
+              class="hover:text-white hover:underline decoration-neo-pink decoration-2 cursor-hover">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold text-neo-green mb-4 border-b border-gray-700 pb-2">SOCIALS</h3>
+        <div class="flex gap-4"><a href="https://leetcode.com/u/subas_mk/" aria-label="LeetCode profile" target="_blank" rel="noopener noreferrer"
+            class="text-2xl hover:text-neo-blue transition-colors cursor-hover"><i class="ri-code-fill"></i></a><a
+            href="https://www.instagram.com/ofc.not_arham"
+            class="text-2xl hover:text-neo-pink transition-colors cursor-hover"><i class="ri-instagram-fill"></i></a><a
+            href="https://github.com/subasmk" class="text-2xl hover:text-neo-yellow transition-colors cursor-hover"><i
+              class="ri-github-fill"></i></a><a href="https://www.linkedin.com/in/subasmk/"
+            class="text-2xl hover:text-neo-purple transition-colors cursor-hover"><i class="ri-linkedin-fill"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-16 pt-8 border-t border-gray-800 text-gray-500 text-sm">
+      <p>© 2026 SUBASH M • Built with HTML, CSS & JavaScript.</p>
+    </div>
+    <div
+      class="absolute bottom-0 left-0 w-full text-[20vw] font-black text-white opacity-[0.03] leading-none select-none pointer-events-none text-center">
+      BRUTAL</div>
+  </footer>
+
+  <!-- Scroll To Top Button -->
+  <button id="scrollTopBtn"
+    class="fixed bottom-6 right-6 bg-neo-yellow border-4 border-black p-4 shadow-hard hidden z-50 hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all cursor-pointer">↑</button>
+
+  <link rel="stylesheet" href="showcase.css?v=20260930-1">
+  <script src="showcase.js?v=20260930-1" defer></script>
+  <script src="script.js" defer></script>
+</body>
+
+</html>
