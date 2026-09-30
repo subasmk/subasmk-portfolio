@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Subash Mk - AI & Data Science student and full stack builder. I ship real products: TrackMe, an open-source Android habit tracker, and MockMentor, an AI mock-interview platform.">
+  <meta name="keywords" content="Subash Mk, subasmk, AI, Data Science, Full Stack Developer, GenAI, LLM, Portfolio, TrackMe, MockMentor, App Development">
+  <meta name="author" content="Subash Mk">
+  <link rel="canonical" href="https://subash-portfolio.vercel.app/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://subash-portfolio.vercel.app/">
+  <meta property="og:title" content="SUBASH MK | AI & DS Student, Full Stack Builder">
+  <meta property="og:description" content="I build and ship real products - TrackMe (Android habit tracker) and MockMentor (AI mock interviews). GenAI, full stack, app dev.">
+  <meta property="og:image" content="Assets/images/trackme.png">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="SUBASH MK | AI & DS Student, Full Stack Builder">
+  <meta property="twitter:description" content="I build and ship real products - TrackMe and MockMentor. GenAI, full stack, app dev.">
+  <meta property="twitter:image" content="Assets/images/trackme.png">
+
+  <title>SUBASH MK | AI & DS Student · Builder</title>
+  <meta name="theme-color" content="#050810">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Subash Mk",
+    "url": "https://subash-portfolio.vercel.app/",
+    "jobTitle": "AI & Data Science Student / Full Stack Builder",
+    "knowsAbout": ["Generative AI", "LLMs", "React", "Python", "Java", "Node.js", "Android App Development", "Supabase", "Cybersecurity"],
+    "sameAs": [
+      "https://github.com/subasmk",
+      "https://leetcode.com/u/subas_mk/",
+      "https://www.linkedin.com/in/subasmk/",
+      "https://www.instagram.com/subasmk"
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div id="cursor" aria-hidden="true"></div>
+  <div id="cursor-ring" aria-hidden="true"></div>
+  <div id="progressBar" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#top" class="logo cursor-hover">SUBASH<span>.MK</span><i class="blink">_</i></a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about" class="cursor-hover">about</a>
+        <a href="#projects" class="cursor-hover">projects</a>
+        <a href="#skills" class="cursor-hover">skills</a>
+        <a href="#journey" class="cursor-hover">journey</a>
+        <a href="#contact" class="nav-cta cursor-hover">contact</a>
+      </div>
+      <button id="menuBtn" aria-label="menu"><i class="ri-menu-line"></i></button>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header id="top" class="hero">
+    <canvas id="particles"></canvas>
+    <div class="hero-glow g1"></div>
+    <div class="hero-glow g2"></div>
+
+    <div class="hero-content">
+      <div class="status-chip reveal">
+        <span class="dot"></span> OPEN TO INTERNSHIPS &amp; COLLABS
+      </div>
+      <h1 class="reveal">
+        <span class="hi">hey, i'm</span>
+        <span class="name">SUBASH <em>MK</em></span>
+      </h1>
+      <div class="typing-line reveal">
+        <span class="prompt">&gt;_</span> <span id="typer"></span><span class="caret">▍</span>
+      </div>
+      <p class="hero-sub reveal">
+        B.Tech AI &amp; Data Science student who doesn't just learn tech - I ship it.
+        Real apps, real users, real hackathons. Currently deep into
+        <b>GenAI</b>, <b>full stack</b> and <b>app development</b>.
+      </p>
+      <div class="hero-btns reveal">
+        <a href="#projects" class="btn btn-primary cursor-hover">VIEW MY WORK <i class="ri-arrow-right-line"></i></a>
+        <a href="https://github.com/subasmk" target="_blank" rel="noopener noreferrer" class="btn btn-ghost cursor-hover"><i class="ri-github-fill"></i> GITHUB</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat"><b id="st-repos">-</b><span>public repos</span></div>
+        <div class="stat"><b id="st-followers">-</b><span>github followers</span></div>
+        <div class="stat"><b>2</b><span>products shipped</span></div>
+        <div class="stat"><b>1</b><span>hackathon submitted</span></div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-hint cursor-hover" aria-label="scroll down"><i class="ri-arrow-down-line"></i></a>
+  </header>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>GENAI // LLM // FULL STACK // APP DEV // CYBERSECURITY // DATA SCIENCE // BUILDING IN PUBLIC // SHIP &gt; PERFECT //&nbsp;</span>
+      <span>GENAI // LLM // FULL STACK // APP DEV // CYBERSECURITY // DATA SCIENCE // BUILDING IN PUBLIC // SHIP &gt; PERFECT //&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section">
+    <div class="section-head reveal">
+      <span class="tag">01 // ABOUT</span>
+      <h2>the human behind<br>the <em>terminal</em></h2>
+    </div>
+    <div class="about-grid">
+      <div class="photo-card reveal">
+        <div class="photo-frame">
+          <img src="Assets/images/img.jpg" alt="Subash Mk" loading="lazy">
+        </div>
+        <div class="photo-caption">./subash_mk <span class="ok">● online</span></div>
+      </div>
+      <div class="about-text reveal">
+        <p class="lead">I'm a <b>polymath-in-progress</b> - learning cybersecurity, GenAI, LLMs, full stack and app development, all at once, in public.</p>
+        <p>I don't collect courses, I collect <b>shipped things</b>. An Android app with quests, streaks and an AI assistant. An AI interview platform built and submitted at a hackathon in a single day. A Smart India Hackathon entry. Every project teaches me more than any tutorial could.</p>
+        <div class="fact-grid">
+          <div class="fact"><i class="ri-graduation-cap-line"></i><div><b>EDUCATION</b><span>B.Tech, AI &amp; Data Science</span></div></div>
+          <div class="fact"><i class="ri-focus-3-line"></i><div><b>CURRENT FOCUS</b><span>GenAI · Full Stack · App Dev</span></div></div>
+          <div class="fact"><i class="ri-map-pin-line"></i><div><b>BASE</b><span>India · Remote-friendly</span></div></div>
+          <div class="fact"><i class="ri-pulse-line"></i><div><b>STATUS</b><span>Building, learning, shipping</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="section section-alt">
+    <div class="section-head reveal">
+      <span class="tag">02 // PROJECTS</span>
+      <h2>things i <em>shipped</em>,<br>not just started</h2>
+    </div>
+
+    <div class="projects">
+      <article class="project reveal tilt">
+        <div class="project-shot">
+          <img src="Assets/images/trackme.png" alt="TrackMe app" loading="lazy">
+          <div class="shot-overlay"><a href="https://github.com/subasmk/Track-Me" target="_blank" rel="noopener noreferrer" class="overlay-btn cursor-hover">OPEN REPO <i class="ri-arrow-right-up-line"></i></a></div>
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <h3>TrackMe</h3>
+            <span class="badge b-cyan">v3.0 LIVE</span>
+          </div>
+          <p>Open-source Android habit tracker that turns self-improvement into a game - Solo-Leveling-style quests, streaks, home-screen widgets, a sloth mascot, a social layer, and an AI assistant you bring your own free key to.</p>
+          <div class="chips">
+            <span>Android</span><span>Supabase</span><span>GenAI / BYOK</span><span>Widgets</span><span>Open Source</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/subasmk/Track-Me" target="_blank" rel="noopener noreferrer" class="cursor-hover"><i class="ri-github-fill"></i> source</a>
+            <a href="https://github.com/subasmk/Track-Me/releases" target="_blank" rel="noopener noreferrer" class="cursor-hover"><i class="ri-download-2-line"></i> releases</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project reveal tilt">
+        <div class="project-shot">
+          <img src="Assets/images/mockmentor.png" alt="MockMentor app" loading="lazy">
+          <div class="shot-overlay"><a href="https://mock-mentor-taupe.vercel.app/" target="_blank" rel="noopener noreferrer" class="overlay-btn cursor-hover">LIVE DEMO <i class="ri-arrow-right-up-line"></i></a></div>
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <h3>MockMentor</h3>
+            <span class="badge b-violet">HACKATHON</span>
+          </div>
+          <p>AI mock-interview platform: paste your résumé, face an animated AI interviewer that speaks, and get expression + eye-contact analysis from your webcam. Designed, built and submitted in a single day at an IBM hackathon.</p>
+          <div class="chips">
+            <span>React + Vite</span><span>Vercel</span><span>OpenRouter</span><span>face-api.js</span><span>Web Speech</span>
+          </div>
+          <div class="project-links">
+            <a href="https://mock-mentor-taupe.vercel.app/" target="_blank" rel="noopener noreferrer" class="cursor-hover"><i class="ri-global-line"></i> live</a>
+            <a href="https://github.com/subasmk/MOCK-MENTOR" target="_blank" rel="noopener noreferrer" class="cursor-hover"><i class="ri-github-fill"></i> source</a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="more-repos reveal">
+      <a href="https://github.com/subasmk?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn btn-ghost cursor-hover">MORE ON GITHUB <i class="ri-arrow-right-up-line"></i></a>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" class="section">
+    <div class="section-head reveal">
+      <span class="tag">03 // SKILLS</span>
+      <h2>the <em>arsenal</em></h2>
+    </div>
+    <div class="skill-grid">
+      <div class="skill-card reveal cursor-hover">
+        <i class="ri-robot-2-line"></i>
+        <h4>GenAI &amp; LLMs</h4>
+        <div class="chips"><span>Prompt Engineering</span><span>OpenRouter</span><span>Gemini</span><span>BYOK patterns</span></div>
+      </div>
+      <div class="skill-card reveal cursor-hover">
+        <i class="ri-code-s-slash-line"></i>
+        <h4>Full Stack</h4>
+        <div class="chips"><span>React</span><span>Next.js</span><span>Node.js</span><span>Django</span><span>Flask</span><span>Tailwind</span></div>
+      </div>
+      <div class="skill-card reveal cursor-hover">
+        <i class="ri-smartphone-line"></i>
+        <h4>App Dev</h4>
+        <div class="chips"><span>Android</span><span>Supabase</span><span>MySQL</span><span>Widgets</span><span>Play-ready APKs</span></div>
+      </div>
+      <div class="skill-card reveal cursor-hover">
+        <i class="ri-terminal-box-line"></i>
+        <h4>Languages</h4>
+        <div class="chips"><span>Python</span><span>Java</span><span>JavaScript</span><span>C++</span><span>PHP</span></div>
+      </div>
+      <div class="skill-card reveal cursor-hover">
+        <i class="ri-shield-keyhole-line"></i>
+        <h4>Cybersecurity</h4>
+        <div class="chips"><span>Learning</span><span>Web Security</span><span>Prompt Injection</span></div>
+      </div>
+      <div class="skill-card reveal cursor-hover">
+        <i class="ri-tools-line"></i>
+        <h4>Tools &amp; Cloud</h4>
+        <div class="chips"><span>Git</span><span>GitHub</span><span>Vercel</span><span>AWS</span><span>CI/CD</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ JOURNEY ============ -->
+  <section id="journey" class="section section-alt">
+    <div class="section-head reveal">
+      <span class="tag">04 // JOURNEY</span>
+      <h2>2026 <em>quest log</em></h2>
+    </div>
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <span class="tl-date">SEP 2026</span>
+          <h4>IBM Hackathon - built &amp; submitted in one day</h4>
+          <p>MockMentor went from idea to live AI interview platform within the hackathon window, with a teammate, using AI-assisted dev tools.</p>
+        </div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <span class="tl-date">SEP 2026</span>
+          <h4>TrackMe v3.0 - shipped an AI System Assistant</h4>
+          <p>Three major releases of my own Android app. v3.0 added a free-to-run AI assistant with bring-your-own-key design.</p>
+        </div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <span class="tl-date">2026</span>
+          <h4>Smart India Hackathon participant</h4>
+          <p>Designed and pitched a digital-companion concept for SIH 2026 - problem framing, decks and product thinking.</p>
+        </div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <span class="tl-date">ONGOING</span>
+          <h4>Building in public</h4>
+          <p>Documenting the whole journey - wins, bugs and lessons - on LinkedIn and GitHub. LeetCode on the side.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section">
+    <div class="contact-card reveal">
+      <div class="contact-left">
+        <span class="tag">05 // CONTACT</span>
+        <h2>let's build<br>something <em>real</em></h2>
+        <p>Internships, collabs, hackathon teams, or just tech talk - my inbox is open.</p>
+        <div class="contact-rows">
+          <a href="mailto:mksubash2809@gmail.com" class="contact-row cursor-hover"><i class="ri-mail-line"></i> mksubash2809@gmail.com</a>
+          <div class="contact-row"><i class="ri-map-pin-line"></i> India · Remote-friendly</div>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/subasmk" target="_blank" rel="noopener noreferrer" class="cursor-hover" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+          <a href="https://www.linkedin.com/in/subasmk/" target="_blank" rel="noopener noreferrer" class="cursor-hover" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+          <a href="https://leetcode.com/u/subas_mk/" target="_blank" rel="noopener noreferrer" class="cursor-hover" aria-label="LeetCode"><i class="ri-code-fill"></i></a>
+          <a href="https://www.instagram.com/subasmk" target="_blank" rel="noopener noreferrer" class="cursor-hover" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <label>NAME<input type="text" id="cf-name" placeholder="your name" required></label>
+        <label>EMAIL<input type="email" id="cf-email" placeholder="you@company.com" required></label>
+        <label>MESSAGE<textarea id="cf-msg" rows="4" placeholder="what are we building?" required></textarea></label>
+        <button type="submit" class="btn btn-primary cursor-hover">SEND VIA EMAIL <i class="ri-send-plane-line"></i></button>
+        <p class="form-note">opens your mail app, nothing is stored</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <div class="footer-inner">
+      <a href="#top" class="logo cursor-hover">SUBASH<span>.MK</span></a>
+      <p class="footer-line">designed &amp; built by Subash Mk · © 2026</p>
+      <p class="footer-mono">// ship &gt; perfect</p>
+    </div>
+    <div class="footer-bg" aria-hidden="true">BUILD</div>
+  </footer>
+
+  <button id="scrollTopBtn" aria-label="back to top"><i class="ri-arrow-up-line"></i></button>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
