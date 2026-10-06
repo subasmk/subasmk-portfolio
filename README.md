@@ -7,7 +7,7 @@
 [![Live](https://img.shields.io/badge/Live-subasmk.vercel.app-22d3ee?style=for-the-badge&logo=vercel&logoColor=white)](https://subasmk.vercel.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-subasmk-181717?style=for-the-badge&logo=github)](https://github.com/subasmk)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-SUBASH_Mk-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/subasmk/)
-[![LeetCode](https://img.shields.io/badge/LeetCode-subas__mk-FFA116?style=for-the-badge&logo=leetcode)](https://leetcode.com/u/subas_mk/)
+[![LeetCode](https://img.shields.io/badge/LeetCode-subasmk-FFA116?style=for-the-badge&logo=leetcode)](https://leetcode.com/u/subasmk/)
 
 **Live site: [subasmk.vercel.app](https://subasmk.vercel.app)**
 
