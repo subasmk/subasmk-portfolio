@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://subasmk.vercel.app/sitemap.xml
+Sitemap: https://subashmk.xyz/sitemap.xml
